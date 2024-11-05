@@ -1,9 +1,8 @@
 import React, { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { ChevronDown, Search, Rocket } from "lucide-react";
+import { ChevronDown, Search, Rocket, Star } from "lucide-react";
 import {
   Select,
   SelectContent,
@@ -32,8 +31,6 @@ interface LaunchTimelineProps {
   launches: Launch[];
 }
 
-type BadgeVariant = "success" | "destructive" | "warning" | "secondary";
-
 const LaunchTimeline: React.FC<LaunchTimelineProps> = ({ launches }) => {
   const [expandedLaunch, setExpandedLaunch] = useState<number | null>(null);
   const [searchTerm, setSearchTerm] = useState<string>("");
@@ -42,49 +39,41 @@ const LaunchTimeline: React.FC<LaunchTimelineProps> = ({ launches }) => {
   const [selectedOrbit, setSelectedOrbit] = useState<string>("all");
   const [selectedOutcome, setSelectedOutcome] = useState<string>("all");
 
-  // Extract unique values for filters
-  const years = useMemo<number[]>(() => {
-    const uniqueYears = [
+  const years = useMemo(() => {
+    return [
       ...new Set(
         launches.map((launch) =>
           new Date(launch.dateTime.split(" | ")[0]).getFullYear()
         )
       ),
     ].sort((a, b) => b - a);
-    return uniqueYears;
   }, [launches]);
 
-  const rockets = useMemo<string[]>(() => {
-    const uniqueRockets = [
+  const rockets = useMemo(() => {
+    return [
       ...new Set(launches.map((launch) => launch.rocket || "Unspecified")),
     ]
       .filter(Boolean)
       .sort();
-    return uniqueRockets;
   }, [launches]);
 
-  const orbits = useMemo<string[]>(() => {
-    const uniqueOrbits = [
-      ...new Set(launches.map((launch) => launch.orbit || "Unspecified")),
-    ]
+  const orbits = useMemo(() => {
+    return [...new Set(launches.map((launch) => launch.orbit || "Unspecified"))]
       .filter(Boolean)
       .sort();
-    return uniqueOrbits;
   }, [launches]);
 
-  const outcomes = useMemo<string[]>(() => {
-    const uniqueOutcomes = [
+  const outcomes = useMemo(() => {
+    return [
       ...new Set(
         launches.map((launch) => launch.launchOutcome || "Unspecified")
       ),
     ]
       .filter(Boolean)
       .sort();
-    return uniqueOutcomes;
   }, [launches]);
 
-  // Filter launches based on search term and filters
-  const filteredLaunches = useMemo<Launch[]>(() => {
+  const filteredLaunches = useMemo(() => {
     return launches.filter((launch) => {
       const matchesSearch =
         (launch.payload?.toLowerCase() || "").includes(
@@ -102,10 +91,8 @@ const LaunchTimeline: React.FC<LaunchTimelineProps> = ({ launches }) => {
 
       const matchesRocket =
         selectedRocket === "all" || launch.rocket === selectedRocket;
-
       const matchesOrbit =
         selectedOrbit === "all" || launch.orbit === selectedOrbit;
-
       const matchesOutcome =
         selectedOutcome === "all" || launch.launchOutcome === selectedOutcome;
 
@@ -126,7 +113,6 @@ const LaunchTimeline: React.FC<LaunchTimelineProps> = ({ launches }) => {
     selectedOutcome,
   ]);
 
-  // Format date string
   const formatDate = (dateTime: string): string => {
     const [date, time] = dateTime.split(" | ");
     return (
@@ -138,199 +124,230 @@ const LaunchTimeline: React.FC<LaunchTimelineProps> = ({ launches }) => {
     );
   };
 
-  const getOutcomeBadgeVariant = (outcome?: string): BadgeVariant => {
+  const getBadgeStyles = (outcome?: string) => {
     switch (outcome?.toLowerCase()) {
       case "success":
-        return "success";
+        return "bg-emerald-500/20 text-emerald-400 border-emerald-500/50 hover:bg-emerald-500/30";
       case "failure":
-        return "destructive";
+        return "bg-red-500/20 text-red-400 border-red-500/50 hover:bg-red-500/30";
       case "partial success":
-        return "warning";
+        return "bg-amber-500/20 text-amber-400 border-amber-500/50 hover:bg-amber-500/30";
       default:
-        return "secondary";
+        return "bg-slate-500/20 text-slate-400 border-slate-500/50 hover:bg-slate-500/30";
     }
   };
 
+  const generateStars = (count: number) => {
+    return Array.from({ length: count }, (_, i) => (
+      <div
+        key={i}
+        className="absolute rounded-full bg-white"
+        style={{
+          width: Math.random() * 2 + 1 + "px",
+          height: Math.random() * 2 + 1 + "px",
+          top: Math.random() * 100 + "%",
+          left: Math.random() * 100 + "%",
+          animation: `twinkle ${Math.random() * 4 + 2}s infinite`,
+        }}
+      />
+    ));
+  };
+
   return (
-    <div className="space-y-4">
-      <div className="flex flex-col gap-4">
-        <div className="relative">
-          <Search className="absolute left-2 top-2.5 h-4 w-4 text-gray-500" />
-          <Input
-            placeholder="Search launches, rockets, or missions..."
-            className="pl-8"
-            value={searchTerm}
-            onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-              setSearchTerm(e.target.value)
-            }
-          />
-        </div>
+    <div className="relative min-h-screen bg-gradient-to-b from-space-dark to-space-darker p-6 overflow-hidden">
+      <style jsx global>{`
+        @keyframes twinkle {
+          0%,
+          100% {
+            opacity: 1;
+          }
+          50% {
+            opacity: 0.2;
+          }
+        }
+      `}</style>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-2">
-          <Select value={selectedYear} onValueChange={setSelectedYear}>
-            <SelectTrigger>
-              <SelectValue placeholder="Filter by year" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="all">All Years</SelectItem>
-              {years.map((year) => (
-                <SelectItem key={year} value={year.toString()}>
-                  {year}
-                </SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
-
-          <Select value={selectedRocket} onValueChange={setSelectedRocket}>
-            <SelectTrigger>
-              <SelectValue placeholder="Filter by rocket" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="all">All Rockets</SelectItem>
-              {rockets.map((rocket) => (
-                <SelectItem key={rocket} value={rocket}>
-                  {rocket}
-                </SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
-
-          <Select value={selectedOrbit} onValueChange={setSelectedOrbit}>
-            <SelectTrigger>
-              <SelectValue placeholder="Filter by orbit" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="all">All Orbits</SelectItem>
-              {orbits.map((orbit) => (
-                <SelectItem key={orbit} value={orbit}>
-                  {orbit}
-                </SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
-
-          <Select value={selectedOutcome} onValueChange={setSelectedOutcome}>
-            <SelectTrigger>
-              <SelectValue placeholder="Filter by outcome" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="all">All Outcomes</SelectItem>
-              {outcomes.map((outcome) => (
-                <SelectItem key={outcome} value={outcome}>
-                  {outcome}
-                </SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
-        </div>
+      <div className="fixed inset-0 pointer-events-none">
+        {generateStars(100)}
       </div>
 
-      <ScrollArea className="h-[600px]">
-        <div className="space-y-4">
-          {filteredLaunches.length === 0 ? (
-            <div className="text-center py-8 text-gray-400">
-              No launches found matching your criteria
-            </div>
-          ) : (
-            filteredLaunches.map((launch, idx) => (
-              <motion.div
-                key={launch.launchNo}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: idx * 0.05 }}
-              >
-                <Card className="bg-white/5 border-none hover:bg-white/10 transition-colors">
-                  <CardContent className="p-4">
-                    <motion.div
-                      className="cursor-pointer"
-                      onClick={() =>
-                        setExpandedLaunch(expandedLaunch === idx ? null : idx)
-                      }
-                    >
-                      <div className="flex justify-between items-center">
-                        <div className="space-y-2">
-                          <div className="flex flex-wrap items-center gap-2">
-                            {launch.launchOutcome && (
-                              <Badge
-                                variant={getOutcomeBadgeVariant(
-                                  launch.launchOutcome
-                                )}
-                              >
-                                {launch.launchOutcome}
-                              </Badge>
-                            )}
-                            {launch.rocket && (
-                              <Badge
-                                variant="outline"
-                                className="flex items-center gap-1"
-                              >
-                                <Rocket className="w-3 h-3" />
-                                {launch.rocket}
-                              </Badge>
-                            )}
-                            {launch.orbit && (
-                              <Badge variant="secondary">{launch.orbit}</Badge>
-                            )}
-                            <span className="text-sm text-gray-300">
-                              {formatDate(launch.dateTime)}
-                            </span>
-                          </div>
-                          <div className="space-y-1">
-                            <h3 className="font-semibold">
-                              {launch.payload}
-                              {launch.payloadMass && (
-                                <span className="text-sm text-gray-400 ml-2">
-                                  ({launch.payloadMass} {launch.payloadMassUnit}
-                                  )
-                                </span>
-                              )}
-                            </h3>
-                            {launch.launchSite && (
-                              <div className="text-sm text-gray-400">
-                                Launch Site: {launch.launchSite}
-                              </div>
-                            )}
-                          </div>
-                        </div>
-                        <ChevronDown
-                          className={`transform transition-transform ${
-                            expandedLaunch === idx ? "rotate-180" : ""
-                          }`}
-                        />
-                      </div>
-                      <AnimatePresence>
-                        {expandedLaunch === idx && (
-                          <motion.div
-                            initial={{ height: 0, opacity: 0 }}
-                            animate={{ height: "auto", opacity: 1 }}
-                            exit={{ height: 0, opacity: 0 }}
-                            className="mt-4"
-                          >
-                            {launch.missionDescription && (
-                              <p className="text-gray-300">
-                                {launch.missionDescription}
-                              </p>
-                            )}
-                            {launch.notes && (
-                              <p className="text-gray-400 mt-2 italic">
-                                {launch.notes}
-                              </p>
-                            )}
-                            <div className="mt-2 text-sm text-gray-400">
-                              Flight No: {launch.flightNo} | Launch No:{" "}
-                              {launch.launchNo}
-                            </div>
-                          </motion.div>
-                        )}
-                      </AnimatePresence>
-                    </motion.div>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ))
-          )}
+      <div className="space-y-6 relative z-10">
+        <div className="flex flex-col gap-6">
+          <h1 className="text-4xl font-bold text-space-gold text-center">
+            Space Launch Timeline
+          </h1>
+
+          <div className="relative group">
+            <div className="absolute inset-0 bg-space-gold/20 blur-md group-hover:bg-space-gold/30 transition-all rounded-lg" />
+            <Input
+              placeholder="Search launches, rockets, or missions..."
+              className="pl-8 bg-black/40 border-space-gold/50 text-white placeholder-gray-400 relative"
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+            />
+            <Search className="absolute left-2 top-2.5 h-4 w-4 text-space-gold" />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+            {[
+              {
+                value: selectedYear,
+                setValue: setSelectedYear,
+                placeholder: "Filter by year",
+                items: years,
+              },
+              {
+                value: selectedRocket,
+                setValue: setSelectedRocket,
+                placeholder: "Filter by rocket",
+                items: rockets,
+              },
+              {
+                value: selectedOrbit,
+                setValue: setSelectedOrbit,
+                placeholder: "Filter by orbit",
+                items: orbits,
+              },
+              {
+                value: selectedOutcome,
+                setValue: setSelectedOutcome,
+                placeholder: "Filter by outcome",
+                items: outcomes,
+              },
+            ].map((filter, index) => (
+              <div key={index} className="relative group">
+                <div className="absolute inset-0 bg-space-gold/20 blur-md group-hover:bg-space-gold/30 transition-all rounded-lg" />
+                <Select value={filter.value} onValueChange={filter.setValue}>
+                  <SelectTrigger className="bg-black/40 border-space-gold/50 text-white relative">
+                    <SelectValue placeholder={filter.placeholder} />
+                  </SelectTrigger>
+                  <SelectContent className="bg-space-darker border-space-gold/50">
+                    <SelectItem value="all" className="text-space-gold">
+                      All {filter.placeholder.split(" ")[2]}s
+                    </SelectItem>
+                    {filter.items.map((item) => (
+                      <SelectItem
+                        key={item}
+                        value={item.toString()}
+                        className="text-white hover:text-space-gold"
+                      >
+                        {item}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
+            ))}
+          </div>
         </div>
-      </ScrollArea>
+
+        <ScrollArea className="h-[600px] rounded-lg">
+          <div className="space-y-4 pr-4">
+            {filteredLaunches.length === 0 ? (
+              <div className="text-center py-8 text-gray-400">
+                No launches found matching your criteria
+              </div>
+            ) : (
+              filteredLaunches.map((launch, idx) => (
+                <motion.div
+                  key={launch.launchNo}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: idx * 0.05 }}
+                >
+                  <Card className="bg-black/40 backdrop-blur-lg border border-space-gold/30 hover:border-space-gold/60 transition-all group">
+                    <CardContent className="p-6">
+                      <motion.div
+                        className="cursor-pointer"
+                        onClick={() =>
+                          setExpandedLaunch(expandedLaunch === idx ? null : idx)
+                        }
+                      >
+                        <div className="flex justify-between items-start">
+                          <div className="space-y-3 flex-1">
+                            <div className="flex flex-wrap items-center gap-2">
+                              {launch.launchOutcome && (
+                                <div
+                                  className={`px-2.5 py-0.5 rounded-full text-xs font-semibold transition-colors border ${getBadgeStyles(
+                                    launch.launchOutcome
+                                  )}`}
+                                >
+                                  {launch.launchOutcome}
+                                </div>
+                              )}
+                              {launch.rocket && (
+                                <div className="px-2.5 py-0.5 rounded-full text-xs font-semibold border border-space-gold/50 text-space-gold flex items-center gap-1 bg-space-gold/10 hover:bg-space-gold/20 transition-colors">
+                                  <Rocket className="w-3 h-3" />
+                                  {launch.rocket}
+                                </div>
+                              )}
+                              {launch.orbit && (
+                                <div className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/20 text-indigo-400 border border-indigo-500/50 hover:bg-indigo-500/30 transition-colors">
+                                  {launch.orbit}
+                                </div>
+                              )}
+                            </div>
+                            <div className="space-y-2">
+                              <h3 className="text-xl font-semibold text-white group-hover:text-space-gold transition-colors">
+                                {launch.payload}
+                                {launch.payloadMass && (
+                                  <span className="text-sm text-gray-400 ml-2">
+                                    ({launch.payloadMass}{" "}
+                                    {launch.payloadMassUnit})
+                                  </span>
+                                )}
+                              </h3>
+                              <div className="text-sm text-gray-400">
+                                {formatDate(launch.dateTime)}
+                              </div>
+                              {launch.launchSite && (
+                                <div className="text-sm text-gray-400 flex items-center gap-1">
+                                  <Star className="w-3 h-3 text-space-gold" />
+                                  Launch Site: {launch.launchSite}
+                                </div>
+                              )}
+                            </div>
+                          </div>
+                          <ChevronDown
+                            className={`transform transition-transform text-space-gold
+                              ${expandedLaunch === idx ? "rotate-180" : ""}`}
+                          />
+                        </div>
+
+                        <AnimatePresence>
+                          {expandedLaunch === idx && (
+                            <motion.div
+                              initial={{ height: 0, opacity: 0 }}
+                              animate={{ height: "auto", opacity: 1 }}
+                              exit={{ height: 0, opacity: 0 }}
+                              className="mt-6 space-y-4"
+                            >
+                              {launch.missionDescription && (
+                                <p className="text-gray-300 leading-relaxed">
+                                  {launch.missionDescription}
+                                </p>
+                              )}
+                              {launch.notes && (
+                                <p className="text-gray-400 italic border-l-2 border-space-gold/50 pl-4">
+                                  {launch.notes}
+                                </p>
+                              )}
+                              <div className="text-sm text-gray-400">
+                                Flight No: {launch.flightNo} | Launch No:{" "}
+                                {launch.launchNo}
+                              </div>
+                            </motion.div>
+                          )}
+                        </AnimatePresence>
+                      </motion.div>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              ))
+            )}
+          </div>
+        </ScrollArea>
+      </div>
     </div>
   );
 };
