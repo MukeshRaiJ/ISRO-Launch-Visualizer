@@ -16,7 +16,7 @@ import LaunchVehicles from "./launchVehicle";
 import PayloadAnalysis from "./payload";
 import launchData from "./launches.json";
 import PayloadStatsCard from "./totalpayload";
-import LaunchAnalysisDashboard from "./data";
+//import LaunchAnalysisDashboard from "./data";
 
 interface Launch {
   launchOutcome: string;
@@ -106,14 +106,13 @@ const LaunchVisualizer: React.FC = () => {
                   <TabsContent value="timeline">
                     <LaunchTimeline launches={launches} />
                   </TabsContent>
-                  <CardContent>
-                    <LaunchAnalysisDashboard launches={launches} />
-                  </CardContent>
                 </div>
               </Tabs>
             </CardContent>
+            {/* <CardContent>
+              <LaunchAnalysisDashboard launches={launches} />
+            </CardContent> */}
           </Card>
-          <PayloadStatsCard launches={launches} />
         </motion.div>
       </div>
     </motion.div>

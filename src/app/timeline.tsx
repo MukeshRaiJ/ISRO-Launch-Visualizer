@@ -38,6 +38,16 @@ const LaunchTimeline: React.FC<LaunchTimelineProps> = ({ launches }) => {
   const [selectedRocket, setSelectedRocket] = useState<string>("all");
   const [selectedOrbit, setSelectedOrbit] = useState<string>("all");
   const [selectedOutcome, setSelectedOutcome] = useState<string>("all");
+  const [activeQuickFilter, setActiveQuickFilter] = useState<string>("all");
+
+  // Quick filter definitions
+  const quickFilters = [
+    { id: "all", label: "All Launches", icon: "🚀" },
+    { id: "special", label: "Special Missions", icon: "⭐" },
+    { id: "success", label: "Successful Launches", icon: "✅" },
+    { id: "tech", label: "Technology Development", icon: "🔬" },
+    { id: "comms", label: "Communications", icon: "📡" },
+  ];
 
   const years = useMemo(() => {
     return [
@@ -73,6 +83,31 @@ const LaunchTimeline: React.FC<LaunchTimelineProps> = ({ launches }) => {
       .sort();
   }, [launches]);
 
+  const applyQuickFilter = (launch: Launch, filterId: string) => {
+    switch (filterId) {
+      case "special":
+        return (
+          launch.missionDescription?.toLowerCase().includes("special") || false
+        );
+      case "success":
+        return launch.launchOutcome?.toLowerCase() === "success";
+      case "tech":
+        return (
+          launch.missionDescription?.toLowerCase().includes("technology") ||
+          launch.missionDescription?.toLowerCase().includes("development") ||
+          false
+        );
+      case "comms":
+        return (
+          launch.missionDescription?.toLowerCase().includes("communication") ||
+          launch.payload?.toLowerCase().includes("satellite") ||
+          false
+        );
+      default:
+        return true;
+    }
+  };
+
   const filteredLaunches = useMemo(() => {
     return launches.filter((launch) => {
       const matchesSearch =
@@ -95,13 +130,15 @@ const LaunchTimeline: React.FC<LaunchTimelineProps> = ({ launches }) => {
         selectedOrbit === "all" || launch.orbit === selectedOrbit;
       const matchesOutcome =
         selectedOutcome === "all" || launch.launchOutcome === selectedOutcome;
+      const matchesQuickFilter = applyQuickFilter(launch, activeQuickFilter);
 
       return (
         matchesSearch &&
         matchesYear &&
         matchesRocket &&
         matchesOrbit &&
-        matchesOutcome
+        matchesOutcome &&
+        matchesQuickFilter
       );
     });
   }, [
@@ -111,6 +148,7 @@ const LaunchTimeline: React.FC<LaunchTimelineProps> = ({ launches }) => {
     selectedRocket,
     selectedOrbit,
     selectedOutcome,
+    activeQuickFilter,
   ]);
 
   const formatDate = (dateTime: string): string => {
@@ -176,6 +214,33 @@ const LaunchTimeline: React.FC<LaunchTimelineProps> = ({ launches }) => {
           <h1 className="text-4xl font-bold text-space-gold text-center">
             Space Launch Timeline
           </h1>
+
+          {/* Quick Filters */}
+          <div className="flex flex-wrap justify-center gap-3">
+            {quickFilters.map((filter) => (
+              <motion.button
+                key={filter.id}
+                onClick={() => setActiveQuickFilter(filter.id)}
+                className={`
+                  px-4 py-2 rounded-full text-sm font-medium
+                  transition-all duration-300 ease-in-out
+                  backdrop-blur-md border-2
+                  flex items-center gap-2
+                  transform hover:scale-105
+                  ${
+                    activeQuickFilter === filter.id
+                      ? "bg-space-gold/30 border-space-gold text-white shadow-lg shadow-space-gold/20"
+                      : "bg-black/30 border-space-gold/30 text-gray-300 hover:border-space-gold/60 hover:text-white"
+                  }
+                `}
+                whileHover={{ y: -2 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <span>{filter.icon}</span>
+                {filter.label}
+              </motion.button>
+            ))}
+          </div>
 
           <div className="relative group">
             <div className="absolute inset-0 bg-space-gold/20 blur-md group-hover:bg-space-gold/30 transition-all rounded-lg" />
