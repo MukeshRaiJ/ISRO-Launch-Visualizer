@@ -1,4 +1,36 @@
 {
+  "metadata": {
+    "lastUpdated": "2024-11-06",
+    "totalLaunches": 96,
+    "launchVehicles": [
+      "SLV",
+      "ASLV",
+      "PSLV",
+      "GSLV Mk I",
+      "GSLV Mk II",
+      "GSLV Mk III/LVM3",
+      "SSLV",
+      "Test Vehicle",
+      "RLV-TD"
+    ],
+    "launchSites": {
+      "pads": [
+        "ASLV/SLV-3 launch complex ",
+        "First Launch Pad (FLP)",
+        "Second Launch Pad (SLP)",
+        "Sounding Rocket Complex"
+      ],
+      "location": "Satish Dhawan Space Centre SHAR, Sriharikota"
+    },
+    "vehicleGenerations": {
+      "SLV": "First generation - 1979-1983",
+      "ASLV": "Augmented capability - 1987-1994",
+      "PSLV": "Workhorse launcher - 1993-present",
+      "GSLV": "Geosynchronous capability - 2001-present",
+      "LVM3": "Heavy lift capability - 2014-present",
+      "SSLV": "Small satellite launcher - 2022-present"
+    }
+  },
   "launches": [
     {
       "launchNo": 1,
@@ -6,11 +38,20 @@
       "dateTime": "1979-08-10 | 00:00",
       "rocket": "SLV",
       "configuration": "",
-      "launchSite": "SLV Launch Pad",
-      "payload": "Rohini Technology Payload",
-      "payloadMass": "35",
-      "payloadMassUnit": "kg",
-      "orbit": "Low Earth",
+      "launchSite": "ASLV/SLV-3 launch complex ",
+      "payload": {
+        "totalMass": 35,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "Rohini Technology Payload",
+            "country": "India",
+            "mass": 35,
+            "massUnit": "kg"
+          }
+        ]
+      },
+      "orbit": "LEO",
       "user": "ISRO",
       "launchOutcome": "Failure",
       "missionDescription": "Faulty valve caused vehicle to crash into the Bay of Bengal 317 seconds after launch.",
@@ -22,11 +63,20 @@
       "dateTime": "1980-07-18 | 00:00",
       "rocket": "SLV",
       "configuration": "",
-      "launchSite": "SLV Launch Pad",
-      "payload": "Rohini RS-1",
-      "payloadMass": "35",
-      "payloadMassUnit": "kg",
-      "orbit": "Low Earth",
+      "launchSite": "ASLV/SLV-3 launch complex ",
+      "payload": {
+        "totalMass": 35,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "Rohini RS-1",
+            "country": "India",
+            "mass": 35,
+            "massUnit": "kg"
+          }
+        ]
+      },
+      "orbit": "LEO",
       "user": "ISRO",
       "launchOutcome": "Success",
       "missionDescription": "First satellite successfully launched by the indigenous launch vehicle SLV.",
@@ -38,11 +88,20 @@
       "dateTime": "1981-05-31 | 00:00",
       "rocket": "SLV",
       "configuration": "",
-      "launchSite": "SLV Launch Pad",
-      "payload": "Rohini RS-D1",
-      "payloadMass": "38",
-      "payloadMassUnit": "kg",
-      "orbit": "Low Earth",
+      "launchSite": "ASLV/SLV-3 launch complex ",
+      "payload": {
+        "totalMass": 38,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "Rohini RS-D1",
+            "country": "India",
+            "mass": 38,
+            "massUnit": "kg"
+          }
+        ]
+      },
+      "orbit": "LEO",
       "user": "ISRO",
       "launchOutcome": "Partial failure",
       "missionDescription": "Orbit too low. Decayed after 9 days",
@@ -54,11 +113,20 @@
       "dateTime": "1983-04-17 | 00:00",
       "rocket": "SLV",
       "configuration": "",
-      "launchSite": "SLV Launch Pad",
-      "payload": "Rohini RS-D2",
-      "payloadMass": "41.5",
-      "payloadMassUnit": "kg",
-      "orbit": "Low Earth",
+      "launchSite": "ASLV/SLV-3 launch complex ",
+      "payload": {
+        "totalMass": 41.5,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "Rohini RS-D2",
+            "country": "India",
+            "mass": 41.5,
+            "massUnit": "kg"
+          }
+        ]
+      },
+      "orbit": "LEO",
       "user": "ISRO",
       "launchOutcome": "Success",
       "missionDescription": "Earth Observation satellite",
@@ -70,11 +138,20 @@
       "dateTime": "1987-03-24 | 00:00",
       "rocket": "ASLV",
       "configuration": "",
-      "launchSite": "Satish Dhawan Space Centre",
-      "payload": "SROSS-A",
-      "payloadMass": "150",
-      "payloadMassUnit": "kg",
-      "orbit": "",
+      "launchSite": "ASLV/SLV-3 launch complex ",
+      "payload": {
+        "totalMass": 150,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "SROSS-A",
+            "country": "India",
+            "mass": 150,
+            "massUnit": "kg"
+          }
+        ]
+      },
+      "orbit": "LEO",
       "user": "ISRO",
       "launchOutcome": "Failure",
       "missionDescription": "First stage failed to ignite after launch",
@@ -86,11 +163,20 @@
       "dateTime": "1988-07-13 | 00:00",
       "rocket": "ASLV",
       "configuration": "",
-      "launchSite": "Satish Dhawan Space Centre",
-      "payload": "SROSS-B",
-      "payloadMass": "150",
-      "payloadMassUnit": "kg",
-      "orbit": "",
+      "launchSite": "ASLV/SLV-3 launch complex ",
+      "payload": {
+        "totalMass": 150,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "SROSS-B",
+            "country": "India",
+            "mass": 150,
+            "massUnit": "kg"
+          }
+        ]
+      },
+      "orbit": "LEO",
       "user": "ISRO",
       "launchOutcome": "Failure",
       "missionDescription": "Control problems caused launcher to disintegrate",
@@ -102,11 +188,20 @@
       "dateTime": "1992-05-20 | 00:00",
       "rocket": "ASLV",
       "configuration": "",
-      "launchSite": "Satish Dhawan Space Centre",
-      "payload": "SROSS-C",
-      "payloadMass": "106",
-      "payloadMassUnit": "kg",
-      "orbit": "",
+      "launchSite": "ASLV/SLV-3 launch complex ",
+      "payload": {
+        "totalMass": 106,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "SROSS-C",
+            "country": "India",
+            "mass": 106,
+            "massUnit": "kg"
+          }
+        ]
+      },
+      "orbit": "LEO",
       "user": "ISRO",
       "launchOutcome": "Partial failure",
       "missionDescription": "Orbit lower than expected and incorrect spin-stabilization. Decayed quickly.",
@@ -118,11 +213,20 @@
       "dateTime": "1994-05-05 | 00:00",
       "rocket": "ASLV",
       "configuration": "",
-      "launchSite": "Satish Dhawan Space Centre",
-      "payload": "SROSS-C2",
-      "payloadMass": "113",
-      "payloadMassUnit": "kg",
-      "orbit": "",
+      "launchSite": "ASLV/SLV-3 launch complex ",
+      "payload": {
+        "totalMass": 113,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "SROSS-C2",
+            "country": "India",
+            "mass": 113,
+            "massUnit": "kg"
+          }
+        ]
+      },
+      "orbit": "LEO",
       "user": "ISRO",
       "launchOutcome": "Success",
       "missionDescription": "Successful launch of SROSS-C2",
@@ -135,10 +239,19 @@
       "rocket": "PSLV",
       "configuration": "G",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "India IRS-1E",
-      "payloadMass": "846",
-      "payloadMassUnit": "kg",
-      "orbit": "",
+      "payload": {
+        "totalMass": 846,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "IRS-1E",
+            "country": "India",
+            "mass": 846,
+            "massUnit": "kg"
+          }
+        ]
+      },
+      "orbit": "LEO",
       "user": "ISRO",
       "launchOutcome": "Failure",
       "missionDescription": "Maiden flight; Attitude control failure at second stage separation.",
@@ -151,10 +264,19 @@
       "rocket": "PSLV",
       "configuration": "G",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "India IRS-P2",
-      "payloadMass": "804",
-      "payloadMassUnit": "kg",
-      "orbit": "",
+      "payload": {
+        "totalMass": 804,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "IRS-P2",
+            "country": "India",
+            "mass": 804,
+            "massUnit": "kg"
+          }
+        ]
+      },
+      "orbit": "SSO",
       "user": "ISRO",
       "launchOutcome": "Success",
       "missionDescription": "With the successful launch, India became the sixth country in the world to launch satellite in low-Earth orbit",
@@ -167,10 +289,19 @@
       "rocket": "PSLV",
       "configuration": "G",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "India IRS-P3",
-      "payloadMass": "920",
-      "payloadMassUnit": "kg",
-      "orbit": "",
+      "payload": {
+        "totalMass": 920,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "IRS-P3",
+            "country": "India",
+            "mass": 920,
+            "massUnit": "kg"
+          }
+        ]
+      },
+      "orbit": "SSO",
       "user": "ISRO",
       "launchOutcome": "Success",
       "missionDescription": "Third developmental test flight",
@@ -183,10 +314,19 @@
       "rocket": "PSLV",
       "configuration": "G",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "India IRS-1D",
-      "payloadMass": "1250",
-      "payloadMassUnit": "kg",
-      "orbit": "",
+      "payload": {
+        "totalMass": 1250,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "IRS-1D",
+            "country": "India",
+            "mass": 1250,
+            "massUnit": "kg"
+          }
+        ]
+      },
+      "orbit": "SSO",
       "user": "ISRO",
       "launchOutcome": "Partial Success",
       "missionDescription": "First operational flight; Fourth stage under-performed resulting in lower than planned orbit. Satellite used own propulsion to move to correct orbit.",
@@ -199,11 +339,32 @@
       "rocket": "PSLV",
       "configuration": "G",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "India Oceansat-1, Germany DLR-Tubsat, South Korea Kitsat-3",
-      "payloadMass": "1202",
-      "payloadMassUnit": "kg",
-      "orbit": "",
-      "user": "",
+      "payload": {
+        "totalMass": 1202,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "Oceansat-1",
+            "country": "India",
+            "mass": 1050,
+            "massUnit": "kg"
+          },
+          {
+            "name": "DLR-Tubsat",
+            "country": "Germany",
+            "mass": 45,
+            "massUnit": "kg"
+          },
+          {
+            "name": "Kitsat-3",
+            "country": "South Korea",
+            "mass": 107,
+            "massUnit": "kg"
+          }
+        ]
+      },
+      "orbit": "SSO",
+      "user": "ISRO",
       "launchOutcome": "Success",
       "missionDescription": "First launch to have foreign satellites, and first to carry multiple satellites",
       "notes": "PSLV's first commercial launch and also was for the first time an Indian launch vehicle carried multiple satellites"
@@ -215,9 +376,18 @@
       "rocket": "GSLV Mk I",
       "configuration": "Mk I",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "GSAT-1",
-      "payloadMass": "1540",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 1540,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "GSAT-1",
+            "country": "India",
+            "mass": 1540,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "GTO",
       "user": "INSAT",
       "launchOutcome": "Partial failure",
@@ -231,11 +401,32 @@
       "rocket": "PSLV",
       "configuration": "G",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "India TES, Europe PROBA, Germany BIRD",
-      "payloadMass": "1294",
-      "payloadMassUnit": "kg",
-      "orbit": "",
-      "user": "",
+      "payload": {
+        "totalMass": 1294,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "TES",
+            "country": "India",
+            "mass": 1108,
+            "massUnit": "kg"
+          },
+          {
+            "name": "PROBA",
+            "country": "Europe",
+            "mass": 94,
+            "massUnit": "kg"
+          },
+          {
+            "name": "BIRD",
+            "country": "Germany",
+            "mass": 92,
+            "massUnit": "kg"
+          }
+        ]
+      },
+      "orbit": "SSO",
+      "user": "ISRO",
       "launchOutcome": "Success",
       "missionDescription": "First multi-orbit mission",
       "notes": "Placed three satellites in orbit - TES of India, PROBA of the European Space Agency and the BIRD of Germany"
@@ -247,11 +438,20 @@
       "rocket": "PSLV",
       "configuration": "G",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "India MetSat-1 (Kalpana-1)",
-      "payloadMass": "1060",
-      "payloadMassUnit": "kg",
-      "orbit": "",
-      "user": "",
+      "payload": {
+        "totalMass": 1060,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "MetSat-1 (Kalpana-1)",
+            "country": "India",
+            "mass": 1060,
+            "massUnit": "kg"
+          }
+        ]
+      },
+      "orbit": "GTO",
+      "user": "ISRO",
       "launchOutcome": "Success",
       "missionDescription": "India's first launch to GTO",
       "notes": "India's first launch to place a satellite into a Geosynchronous Transfer Orbit"
@@ -263,9 +463,18 @@
       "rocket": "GSLV Mk I",
       "configuration": "Mk I",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "GSAT-2",
-      "payloadMass": "1825",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 1825,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "GSAT-2",
+            "country": "India",
+            "mass": 1825,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "GTO",
       "user": "INSAT",
       "launchOutcome": "Success",
@@ -279,11 +488,20 @@
       "rocket": "PSLV",
       "configuration": "G",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "India RESOURCESAT-1 (IRS-P6)",
-      "payloadMass": "1360",
-      "payloadMassUnit": "kg",
-      "orbit": "",
-      "user": "",
+      "payload": {
+        "totalMass": 1360,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "RESOURCESAT-1 (IRS-P6)",
+            "country": "India",
+            "mass": 1360,
+            "massUnit": "kg"
+          }
+        ]
+      },
+      "orbit": "SSO",
+      "user": "ISRO",
       "launchOutcome": "Success",
       "missionDescription": "Launch took place despite heavy rain",
       "notes": "Payload capability had been progressively increased by more than 600 kg since the first PSLV launch"
@@ -295,9 +513,18 @@
       "rocket": "GSLV Mk I",
       "configuration": "Mk I",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "GSAT-3",
-      "payloadMass": "1950",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 1950,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "GSAT-3",
+            "country": "India",
+            "mass": 1950,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "GTO",
       "user": "INSAT",
       "launchOutcome": "Success",
@@ -311,11 +538,26 @@
       "rocket": "PSLV",
       "configuration": "G",
       "launchSite": "SLP - SDSC SHAR",
-      "payload": "India Cartosat-1, India HAMSAT",
-      "payloadMass": "1602.5",
-      "payloadMassUnit": "kg",
-      "orbit": "",
-      "user": "",
+      "payload": {
+        "totalMass": 1602.5,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "Cartosat-1",
+            "country": "India",
+            "mass": 1560,
+            "massUnit": "kg"
+          },
+          {
+            "name": "HAMSAT",
+            "country": "India",
+            "mass": 42.5,
+            "massUnit": "kg"
+          }
+        ]
+      },
+      "orbit": "SSO",
+      "user": "ISRO",
       "launchOutcome": "Success",
       "missionDescription": "First PSLV launch from the second launch pad",
       "notes": "First launch from the Second Launch Pad, inaugurated on the immediately preceding day"
@@ -327,9 +569,18 @@
       "rocket": "GSLV Mk I",
       "configuration": "Mk I",
       "launchSite": "SLP - SDSC SHAR",
-      "payload": "INSAT-4C",
-      "payloadMass": "2168",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 2168,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "INSAT-4C",
+            "country": "India",
+            "mass": 2168,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "GTO",
       "user": "INSAT",
       "launchOutcome": "Failure",
@@ -343,9 +594,36 @@
       "rocket": "PSLV",
       "configuration": "G",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "India Cartosat-2, India SRE-1, Indonesia LAPAN-TUBsat, Argentina PEHUENSAT-1",
-      "payloadMass": "1242",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 1242,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "Cartosat-2",
+            "country": "India",
+            "mass": 680,
+            "massUnit": "kg"
+          },
+          {
+            "name": "SRE-1",
+            "country": "India",
+            "mass": 500,
+            "massUnit": "kg"
+          },
+          {
+            "name": "LAPAN-TUBsat",
+            "country": "Indonesia",
+            "mass": 56,
+            "massUnit": "kg"
+          },
+          {
+            "name": "PEHUENSAT-1",
+            "country": "Argentina",
+            "mass": 6,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "",
       "user": "",
       "launchOutcome": "Success",
@@ -359,9 +637,25 @@
       "rocket": "PSLV",
       "configuration": "CA",
       "launchSite": "SLP - SDSC SHAR",
-      "payload": "Italy AGILE, India AAM",
-      "payloadMass": "537",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 537,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "AGILE",
+            "country": "Italy",
+            "mass": 352,
+            "massUnit": "kg"
+          },
+          {
+            "name": "AAM",
+            "country": "India",
+            "mass": 185,
+            "massUnit": "kg",
+            "note": "attached to PS4"
+          }
+        ]
+      },
       "orbit": "",
       "user": "",
       "launchOutcome": "Success",
@@ -375,9 +669,18 @@
       "rocket": "GSLV Mk I",
       "configuration": "Mk I",
       "launchSite": "SLP - SDSC SHAR",
-      "payload": "INSAT-4CR",
-      "payloadMass": "2160",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 2160,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "INSAT-4CR",
+            "country": "India",
+            "mass": 2160,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "GTO",
       "user": "INSAT",
       "launchOutcome": "Partial Success",
@@ -391,9 +694,18 @@
       "rocket": "PSLV",
       "configuration": "CA",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "Israel TecSAR",
-      "payloadMass": "295",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 295,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "TecSAR",
+            "country": "Israel",
+            "mass": 295,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "",
       "user": "",
       "launchOutcome": "Success",
@@ -407,9 +719,72 @@
       "rocket": "PSLV",
       "configuration": "CA",
       "launchSite": "SLP - SDSC SHAR",
-      "payload": "India Cartosat-2A, India IMS-1/TWSAT, Germany RUBIN-8, Canada CanX-6/NTS, Canada CanX-2, Japan CUTE-1.7 + APD II, Netherlands Delfi-C3, Japan SEEDS-2, Germany COMPASS-1, Denmark AAUSAT-II",
-      "payloadMass": "799.95",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 799.95,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "Cartosat-2A",
+            "country": "India",
+            "mass": 690,
+            "massUnit": "kg"
+          },
+          {
+            "name": "IMS-1/TWSAT",
+            "country": "India",
+            "mass": 83,
+            "massUnit": "kg"
+          },
+          {
+            "name": "RUBIN-8",
+            "country": "Germany",
+            "mass": 8,
+            "massUnit": "kg"
+          },
+          {
+            "name": "CanX-6/NTS",
+            "country": "Canada",
+            "mass": 6.5,
+            "massUnit": "kg"
+          },
+          {
+            "name": "CanX-2",
+            "country": "Canada",
+            "mass": 3.5,
+            "massUnit": "kg"
+          },
+          {
+            "name": "CUTE-1.7 + APD II",
+            "country": "Japan",
+            "mass": 3,
+            "massUnit": "kg"
+          },
+          {
+            "name": "Delfi-C3",
+            "country": "Netherlands",
+            "mass": 2.2,
+            "massUnit": "kg"
+          },
+          {
+            "name": "SEEDS-2",
+            "country": "Japan",
+            "mass": 1,
+            "massUnit": "kg"
+          },
+          {
+            "name": "COMPASS-1",
+            "country": "Germany",
+            "mass": 1,
+            "massUnit": "kg"
+          },
+          {
+            "name": "AAUSAT-II",
+            "country": "Denmark",
+            "mass": 0.75,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "",
       "user": "",
       "launchOutcome": "Success",
@@ -423,9 +798,18 @@
       "rocket": "PSLV",
       "configuration": "XL",
       "launchSite": "SLP - SDSC SHAR",
-      "payload": "India Chandrayaan-1",
-      "payloadMass": "1380",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 1380,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "Chandrayaan-1",
+            "country": "India",
+            "mass": 1380,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "",
       "user": "",
       "launchOutcome": "Success",
@@ -439,9 +823,24 @@
       "rocket": "PSLV",
       "configuration": "CA",
       "launchSite": "SLP - SDSC SHAR",
-      "payload": "India RISAT-2, India ANUSAT",
-      "payloadMass": "340",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 340,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "RISAT-2",
+            "country": "India",
+            "mass": 300,
+            "massUnit": "kg"
+          },
+          {
+            "name": "ANUSAT",
+            "country": "India",
+            "mass": 40,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "",
       "user": "",
       "launchOutcome": "Success",
@@ -455,9 +854,56 @@
       "rocket": "PSLV",
       "configuration": "CA",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "India Oceansat-2, Germany/Luxembourg Rubin 9.1, Germany/Luxembourg Rubin 9.2, Switzerland SwissCube-1, Germany BeeSat, Germany UWE-2, Turkey ITUpSAT1",
-      "payloadMass": "979",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 979,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "Oceansat-2",
+            "country": "India",
+            "mass": 960,
+            "massUnit": "kg"
+          },
+          {
+            "name": "Rubin 9.1",
+            "country": "Germany/Luxembourg",
+            "mass": 8,
+            "massUnit": "kg",
+            "note": "attached to PS4"
+          },
+          {
+            "name": "Rubin 9.2",
+            "country": "Germany/Luxembourg",
+            "mass": 8,
+            "massUnit": "kg",
+            "note": "attached to PS4"
+          },
+          {
+            "name": "SwissCube-1",
+            "country": "Switzerland",
+            "mass": 1,
+            "massUnit": "kg"
+          },
+          {
+            "name": "BeeSat",
+            "country": "Germany",
+            "mass": 1,
+            "massUnit": "kg"
+          },
+          {
+            "name": "UWE-2",
+            "country": "Germany",
+            "mass": 1,
+            "massUnit": "kg"
+          },
+          {
+            "name": "ITUpSAT1",
+            "country": "Turkey",
+            "mass": 1,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "",
       "user": "",
       "launchOutcome": "Success",
@@ -471,16 +917,24 @@
       "rocket": "GSLV Mk II",
       "configuration": "Mk II",
       "launchSite": "SLP - SDSC SHAR",
-      "payload": "GSAT-4",
-      "payloadMass": "2220",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 2220,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "GSAT-4",
+            "country": "India",
+            "mass": 2220,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "GTO",
       "user": "INSAT",
       "launchOutcome": "Failure",
       "missionDescription": "First flight test of the ISRO designed and built Cryogenic Upper Stage (CUS)",
       "notes": "Failed to reach orbit due to malfunction of the Fuel Booster Turbo Pump (FBTP) of the cryogenic upper stage"
     },
-
     {
       "launchNo": 31,
       "flightNo": "C15",
@@ -488,9 +942,42 @@
       "rocket": "PSLV",
       "configuration": "CA",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "India Cartosat-2B, Algeria ALSAT-2A, Norway AISSat-1, Switzerland TIsat-1, India STUDSAT",
-      "payloadMass": "822.45",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 822.45,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "Cartosat-2B",
+            "country": "India",
+            "mass": 694,
+            "massUnit": "kg"
+          },
+          {
+            "name": "ALSAT-2A",
+            "country": "Algeria",
+            "mass": 117,
+            "massUnit": "kg"
+          },
+          {
+            "name": "AISSat-1",
+            "country": "Norway",
+            "mass": 6.5,
+            "massUnit": "kg"
+          },
+          {
+            "name": "TIsat-1",
+            "country": "Switzerland",
+            "mass": 1,
+            "massUnit": "kg"
+          },
+          {
+            "name": "STUDSAT",
+            "country": "India",
+            "mass": 0.95,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "",
       "user": "",
       "launchOutcome": "Success",
@@ -504,9 +991,18 @@
       "rocket": "GSLV Mk I",
       "configuration": "Mk I",
       "launchSite": "SLP - SDSC SHAR",
-      "payload": "GSAT-5P",
-      "payloadMass": "2310",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 2310,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "GSAT-5P",
+            "country": "India",
+            "mass": 2310,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "GTO",
       "user": "INSAT",
       "launchOutcome": "Failure",
@@ -520,9 +1016,30 @@
       "rocket": "PSLV",
       "configuration": "G",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "India ResourceSat-2, Singapore X-Sat, India/Russia YouthSat",
-      "payloadMass": "1404",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 1404,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "ResourceSat-2",
+            "country": "India",
+            "mass": 1206,
+            "massUnit": "kg"
+          },
+          {
+            "name": "X-Sat",
+            "country": "Singapore",
+            "mass": 106,
+            "massUnit": "kg"
+          },
+          {
+            "name": "YouthSat",
+            "country": "India/Russia",
+            "mass": 92,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "",
       "user": "",
       "launchOutcome": "Success",
@@ -536,9 +1053,18 @@
       "rocket": "PSLV",
       "configuration": "XL",
       "launchSite": "SLP - SDSC SHAR",
-      "payload": "India GSAT-12",
-      "payloadMass": "1410",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 1410,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "GSAT-12",
+            "country": "India",
+            "mass": 1410,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "",
       "user": "",
       "launchOutcome": "Success",
@@ -552,9 +1078,36 @@
       "rocket": "PSLV",
       "configuration": "CA",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "India/France Megha-Tropiques, India SRMSAT, India Jugnu, Luxembourg VesselSat-1",
-      "payloadMass": "1042.6",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 1042.6,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "Megha-Tropiques",
+            "country": "India/France",
+            "mass": 1000,
+            "massUnit": "kg"
+          },
+          {
+            "name": "SRMSAT",
+            "country": "India",
+            "mass": 10.9,
+            "massUnit": "kg"
+          },
+          {
+            "name": "Jugnu",
+            "country": "India",
+            "mass": 3,
+            "massUnit": "kg"
+          },
+          {
+            "name": "VesselSat-1",
+            "country": "Luxembourg",
+            "mass": 28.7,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "",
       "user": "",
       "launchOutcome": "Success",
@@ -568,9 +1121,18 @@
       "rocket": "PSLV",
       "configuration": "XL",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "India RISAT-1",
-      "payloadMass": "1858",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 1858,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "RISAT-1",
+            "country": "India",
+            "mass": 1858,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "",
       "user": "",
       "launchOutcome": "Success",
@@ -584,9 +1146,31 @@
       "rocket": "PSLV",
       "configuration": "CA",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "France SPOT-6, India mRESINS, Japan PROITERES",
-      "payloadMass": "785",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 785,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "SPOT-6",
+            "country": "France",
+            "mass": 720,
+            "massUnit": "kg"
+          },
+          {
+            "name": "mRESINS",
+            "country": "India",
+            "mass": 50,
+            "massUnit": "kg",
+            "note": "attached to PS4"
+          },
+          {
+            "name": "PROITERES",
+            "country": "Japan",
+            "mass": 15,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "",
       "user": "",
       "launchOutcome": "Success",
@@ -600,9 +1184,54 @@
       "rocket": "PSLV",
       "configuration": "CA",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "India/France SARAL, Canada Sapphire, Canada NEOSSat, Austria TUGSAT-1, Austria UniBRITE-1, United Kingdom STRaND-1, Denmark AAUSAT3",
-      "payloadMass": "666.3",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 666.3,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "SARAL",
+            "country": "India/France",
+            "mass": 409,
+            "massUnit": "kg"
+          },
+          {
+            "name": "Sapphire",
+            "country": "Canada",
+            "mass": 148,
+            "massUnit": "kg"
+          },
+          {
+            "name": "NEOSSat",
+            "country": "Canada",
+            "mass": 74,
+            "massUnit": "kg"
+          },
+          {
+            "name": "TUGSAT-1",
+            "country": "Austria",
+            "mass": 14,
+            "massUnit": "kg"
+          },
+          {
+            "name": "UniBRITE-1",
+            "country": "Austria",
+            "mass": 14,
+            "massUnit": "kg"
+          },
+          {
+            "name": "STRaND-1",
+            "country": "United Kingdom",
+            "mass": 6.5,
+            "massUnit": "kg"
+          },
+          {
+            "name": "AAUSAT3",
+            "country": "Denmark",
+            "mass": 0.8,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "",
       "user": "",
       "launchOutcome": "Success",
@@ -616,9 +1245,18 @@
       "rocket": "PSLV",
       "configuration": "XL",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "India IRNSS-1A",
-      "payloadMass": "1425",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 1425,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "IRNSS-1A",
+            "country": "India",
+            "mass": 1425,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "",
       "user": "",
       "launchOutcome": "Success",
@@ -632,16 +1270,24 @@
       "rocket": "GSLV Mk II",
       "configuration": "Mk II",
       "launchSite": "SLP - SDSC SHAR",
-      "payload": "GSAT-14",
-      "payloadMass": "1980",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 1980,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "GSAT-14",
+            "country": "India",
+            "mass": 1980,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "GTO",
       "user": "INSAT",
       "launchOutcome": "Success",
       "missionDescription": "Launch of GSLV with indigenously built cryogenic engine",
       "notes": "Second flight of GSLV with indigenous cryogenic upper stage developed by ISRO's Liquid Propulsion Systems Centre"
     },
-
     {
       "launchNo": 41,
       "flightNo": "C25",
@@ -649,9 +1295,18 @@
       "rocket": "PSLV",
       "configuration": "XL",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "India Mars Orbiter Mission",
-      "payloadMass": "1350",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 1350,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "Mars Orbiter Mission (Mangalyaan)",
+            "country": "India",
+            "mass": 1350,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "",
       "user": "ISRO",
       "launchOutcome": "Success",
@@ -665,9 +1320,18 @@
       "rocket": "PSLV",
       "configuration": "XL",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "India IRNSS-1B",
-      "payloadMass": "1432",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 1432,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "IRNSS-1B",
+            "country": "India",
+            "mass": 1432,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "",
       "user": "ISRO",
       "launchOutcome": "Success",
@@ -681,9 +1345,42 @@
       "rocket": "PSLV",
       "configuration": "CA",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "France SPOT-7, Canada CanX-4, Canada CanX-5, Germany AISAT, Singapore VELOX-1",
-      "payloadMass": "765",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 765,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "SPOT-7",
+            "country": "France",
+            "mass": 714,
+            "massUnit": "kg"
+          },
+          {
+            "name": "CanX-4",
+            "country": "Canada",
+            "mass": 15,
+            "massUnit": "kg"
+          },
+          {
+            "name": "CanX-5",
+            "country": "Canada",
+            "mass": 15,
+            "massUnit": "kg"
+          },
+          {
+            "name": "AISAT",
+            "country": "Germany",
+            "mass": 14,
+            "massUnit": "kg"
+          },
+          {
+            "name": "VELOX-1",
+            "country": "Singapore",
+            "mass": 7,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "",
       "user": "",
       "launchOutcome": "Success",
@@ -694,12 +1391,21 @@
       "launchNo": 44,
       "flightNo": "LVM3-X",
       "dateTime": "2014-12-18 | 04:00",
-      "rocket": "LVM3",
+      "rocket": "GSLV Mk III",
       "configuration": "CARE Test Flight",
       "launchSite": "SLP - SDSC SHAR",
-      "payload": "CARE",
-      "payloadMass": "3775",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 3775,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "CARE",
+            "country": "India",
+            "mass": 3775,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "Sub-orbital",
       "user": "ISRO",
       "launchOutcome": "Success",
@@ -713,9 +1419,18 @@
       "rocket": "PSLV",
       "configuration": "XL",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "India IRNSS-1C",
-      "payloadMass": "1425.4",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 1425.4,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "IRNSS-1C",
+            "country": "India",
+            "mass": 1425.4,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "",
       "user": "ISRO",
       "launchOutcome": "Success",
@@ -729,9 +1444,18 @@
       "rocket": "PSLV",
       "configuration": "XL",
       "launchSite": "SLP - SDSC SHAR",
-      "payload": "India IRNSS-1D",
-      "payloadMass": "1425",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 1425,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "IRNSS-1D",
+            "country": "India",
+            "mass": 1425,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "",
       "user": "ISRO",
       "launchOutcome": "Success",
@@ -745,14 +1469,47 @@
       "rocket": "PSLV",
       "configuration": "XL",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "United Kingdom UK-DMC3A, UK-DMC3B, UK-DMC3C, CBNT-1, DeOrbitSail",
-      "payloadMass": "1439",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 1439,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "UK-DMC3A",
+            "country": "United Kingdom",
+            "mass": 447,
+            "massUnit": "kg"
+          },
+          {
+            "name": "UK-DMC3B",
+            "country": "United Kingdom",
+            "mass": 447,
+            "massUnit": "kg"
+          },
+          {
+            "name": "UK-DMC3C",
+            "country": "United Kingdom",
+            "mass": 447,
+            "massUnit": "kg"
+          },
+          {
+            "name": "CBNT-1",
+            "country": "United Kingdom",
+            "mass": 91,
+            "massUnit": "kg"
+          },
+          {
+            "name": "DeOrbitSail",
+            "country": "United Kingdom",
+            "mass": 7,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "",
       "user": "",
       "launchOutcome": "Success",
       "missionDescription": "Heaviest commercial mission at the time",
-      "notes": "UK-DMC 3 and two other foreign satellites launched. Heaviest ever commercial launch mission undertaken by ISRO"
+      "notes": "At the time it was the heaviest commercial mission successfully accomplished using a launch vehicle assembled by ISRO"
     },
     {
       "launchNo": 48,
@@ -761,9 +1518,18 @@
       "rocket": "GSLV Mk II",
       "configuration": "Mk II",
       "launchSite": "SLP - SDSC SHAR",
-      "payload": "GSAT-6",
-      "payloadMass": "2117",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 2117,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "GSAT-6",
+            "country": "India",
+            "mass": 2117,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "GTO",
       "user": "INSAT",
       "launchOutcome": "Success",
@@ -777,9 +1543,54 @@
       "rocket": "PSLV",
       "configuration": "XL",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "India Astrosat, Indonesia LAPAN-A2, Canada exactView 9, United States Lemur-2 (4 satellites)",
-      "payloadMass": "1739.5",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 1739.5,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "Astrosat",
+            "country": "India",
+            "mass": 1650,
+            "massUnit": "kg"
+          },
+          {
+            "name": "LAPAN-A2",
+            "country": "Indonesia",
+            "mass": 68,
+            "massUnit": "kg"
+          },
+          {
+            "name": "exactView 9",
+            "country": "Canada",
+            "mass": 5.5,
+            "massUnit": "kg"
+          },
+          {
+            "name": "Lemur-2 #1 Joel",
+            "country": "United States",
+            "mass": 4,
+            "massUnit": "kg"
+          },
+          {
+            "name": "Lemur-2 #2 Peter",
+            "country": "United States",
+            "mass": 4,
+            "massUnit": "kg"
+          },
+          {
+            "name": "Lemur-2 #3 Jeroen",
+            "country": "United States",
+            "mass": 4,
+            "massUnit": "kg"
+          },
+          {
+            "name": "Lemur-2 #4 Chris",
+            "country": "United States",
+            "mass": 4,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "",
       "user": "",
       "launchOutcome": "Success",
@@ -793,9 +1604,48 @@
       "rocket": "PSLV",
       "configuration": "CA",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "Singapore TeLEOS-1, VELOX-C1, VELOX-II, Kent Ridge-1, Galassia, Athenoxat-1",
-      "payloadMass": "622.2",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 622.2,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "TeLEOS-1",
+            "country": "Singapore",
+            "mass": 400,
+            "massUnit": "kg"
+          },
+          {
+            "name": "VELOX-C1",
+            "country": "Singapore",
+            "mass": 123,
+            "massUnit": "kg"
+          },
+          {
+            "name": "VELOX-II",
+            "country": "Singapore",
+            "mass": 13,
+            "massUnit": "kg"
+          },
+          {
+            "name": "Kent Ridge-1",
+            "country": "Singapore",
+            "mass": 78,
+            "massUnit": "kg"
+          },
+          {
+            "name": "Galassia",
+            "country": "Singapore",
+            "mass": 3.4,
+            "massUnit": "kg"
+          },
+          {
+            "name": "Athenoxat-1",
+            "country": "Singapore",
+            "mass": 4.8,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "",
       "user": "",
       "launchOutcome": "Success",
@@ -809,9 +1659,18 @@
       "rocket": "PSLV",
       "configuration": "XL",
       "launchSite": "SLP - SDSC SHAR",
-      "payload": "India IRNSS-1E",
-      "payloadMass": "1425",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 1425,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "IRNSS-1E",
+            "country": "India",
+            "mass": 1425,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "",
       "user": "ISRO",
       "launchOutcome": "Success",
@@ -825,9 +1684,18 @@
       "rocket": "PSLV",
       "configuration": "XL",
       "launchSite": "SLP - SDSC SHAR",
-      "payload": "India IRNSS-1F",
-      "payloadMass": "1425",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 1425,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "IRNSS-1F",
+            "country": "India",
+            "mass": 1425,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "",
       "user": "ISRO",
       "launchOutcome": "Success",
@@ -841,9 +1709,18 @@
       "rocket": "PSLV",
       "configuration": "XL",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "India IRNSS-1G",
-      "payloadMass": "1425",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 1425,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "IRNSS-1G",
+            "country": "India",
+            "mass": 1425,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "",
       "user": "ISRO",
       "launchOutcome": "Success",
@@ -857,9 +1734,18 @@
       "rocket": "RLV-TD",
       "configuration": "HEX 01",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "RLV-TD",
-      "payloadMass": "",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 1750,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "RLV-TD",
+            "country": "India",
+            "mass": 1750,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "Sub-orbital",
       "user": "ISRO",
       "launchOutcome": "Success",
@@ -873,9 +1759,68 @@
       "rocket": "PSLV",
       "configuration": "XL",
       "launchSite": "SLP - SDSC SHAR",
-      "payload": "India Cartosat-2C, 19 co-passenger satellites",
-      "payloadMass": "1288",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 1288,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "Cartosat-2C",
+            "country": "India",
+            "mass": 727.5,
+            "massUnit": "kg"
+          },
+          {
+            "name": "LAPAN-A3",
+            "country": "Indonesia",
+            "mass": 120,
+            "massUnit": "kg"
+          },
+          {
+            "name": "BIROS",
+            "country": "Germany",
+            "mass": 130,
+            "massUnit": "kg"
+          },
+          {
+            "name": "SkySat Gen2-1",
+            "country": "United States",
+            "mass": 110,
+            "massUnit": "kg"
+          },
+          {
+            "name": "GHGSat-D",
+            "country": "Canada",
+            "mass": 25.5,
+            "massUnit": "kg"
+          },
+          {
+            "name": "M3MSat",
+            "country": "Canada",
+            "mass": 85,
+            "massUnit": "kg"
+          },
+          {
+            "name": "Swayam",
+            "country": "India",
+            "mass": 1,
+            "massUnit": "kg"
+          },
+          {
+            "name": "SathyabamaSat",
+            "country": "India",
+            "mass": 1.5,
+            "massUnit": "kg"
+          },
+          {
+            "name": "Flock-2P Doves",
+            "country": "United States",
+            "mass": 56.4,
+            "massUnit": "kg",
+            "quantity": 12,
+            "massPerUnit": 4.7
+          }
+        ]
+      },
       "orbit": "",
       "user": "ISRO",
       "launchOutcome": "Success",
@@ -889,11 +1834,62 @@
       "rocket": "PSLV",
       "configuration": "G",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "India ScatSat-1, 7 co-passenger satellites",
-      "payloadMass": "665.25",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 665.25,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "ScatSat-1",
+            "country": "India",
+            "mass": 371,
+            "massUnit": "kg"
+          },
+          {
+            "name": "ALSAT-2B",
+            "country": "Algeria",
+            "mass": 117,
+            "massUnit": "kg"
+          },
+          {
+            "name": "ALSAT-1B",
+            "country": "Algeria",
+            "mass": 103,
+            "massUnit": "kg"
+          },
+          {
+            "name": "Pathfinder-1",
+            "country": "United States",
+            "mass": 44,
+            "massUnit": "kg"
+          },
+          {
+            "name": "Pratham",
+            "country": "India",
+            "mass": 10,
+            "massUnit": "kg"
+          },
+          {
+            "name": "CanX-7",
+            "country": "Canada",
+            "mass": 8,
+            "massUnit": "kg"
+          },
+          {
+            "name": "ALSAT-1N",
+            "country": "Algeria",
+            "mass": 7,
+            "massUnit": "kg"
+          },
+          {
+            "name": "PISat",
+            "country": "India",
+            "mass": 5.25,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "",
-      "user": "ISRO",
+      "user": "",
       "launchOutcome": "Success",
       "missionDescription": "First mission with payloads into two different orbits",
       "notes": "First mission of PSLV to launch its payloads into two different orbits"
@@ -905,9 +1901,18 @@
       "rocket": "GSLV Mk II",
       "configuration": "Mk II",
       "launchSite": "SLP - SDSC SHAR",
-      "payload": "INSAT-3DR",
-      "payloadMass": "2211",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 2211,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "INSAT-3DR",
+            "country": "India",
+            "mass": 2211,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "GTO",
       "user": "INSAT",
       "launchOutcome": "Success",
@@ -921,9 +1926,18 @@
       "rocket": "PSLV",
       "configuration": "XL",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "India Resourcesat-2A",
-      "payloadMass": "1235",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 1235,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "Resourcesat-2A",
+            "country": "India",
+            "mass": 1235,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "",
       "user": "ISRO",
       "launchOutcome": "Success",
@@ -937,9 +1951,76 @@
       "rocket": "PSLV",
       "configuration": "XL",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "India Cartosat-2D and 103 co-passenger satellites",
-      "payloadMass": "1378",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 1378,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "Cartosat-2D",
+            "country": "India",
+            "mass": 730,
+            "massUnit": "kg"
+          },
+          {
+            "name": "INS-1A",
+            "country": "India",
+            "mass": 8.4,
+            "massUnit": "kg"
+          },
+          {
+            "name": "INS-1B",
+            "country": "India",
+            "mass": 9.7,
+            "massUnit": "kg"
+          },
+          {
+            "name": "Nayif-1",
+            "country": "United Arab Emirates",
+            "mass": 1.1,
+            "massUnit": "kg"
+          },
+          {
+            "name": "Al Farabi-1",
+            "country": "Kazakhstan",
+            "mass": 1.7,
+            "massUnit": "kg"
+          },
+          {
+            "name": "PEASSS",
+            "country": "Netherlands",
+            "mass": 3,
+            "massUnit": "kg"
+          },
+          {
+            "name": "BGUSAT",
+            "country": "Israel",
+            "mass": 4.3,
+            "massUnit": "kg"
+          },
+          {
+            "name": "DIDO-2",
+            "country": "Switzerland",
+            "mass": 4.2,
+            "massUnit": "kg"
+          },
+          {
+            "name": "Flock-3P",
+            "country": "United States",
+            "mass": 413.6,
+            "massUnit": "kg",
+            "quantity": 88,
+            "massPerUnit": 4.7
+          },
+          {
+            "name": "Lemur-2",
+            "country": "United States",
+            "mass": 36.8,
+            "massUnit": "kg",
+            "quantity": 8,
+            "massPerUnit": 4.6
+          }
+        ]
+      },
       "orbit": "",
       "user": "ISRO",
       "launchOutcome": "Success",
@@ -953,9 +2034,18 @@
       "rocket": "GSLV Mk II",
       "configuration": "Mk II",
       "launchSite": "SLP - SDSC SHAR",
-      "payload": "GSAT-9 / South Asia Satellite",
-      "payloadMass": "2230",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 2230,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "GSAT-9 / South Asia Satellite",
+            "country": "India",
+            "mass": 2230,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "GTO",
       "user": "INSAT",
       "launchOutcome": "Success",
@@ -969,9 +2059,18 @@
       "rocket": "GSLV Mk III",
       "configuration": "D1",
       "launchSite": "SLP - SDSC SHAR",
-      "payload": "GSAT-19",
-      "payloadMass": "3136",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 3136,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "GSAT-19",
+            "country": "India",
+            "mass": 3136,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "GTO",
       "user": "INSAT",
       "launchOutcome": "Success",
@@ -985,14 +2084,145 @@
       "rocket": "PSLV",
       "configuration": "XL",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "India Cartosat-2E and 30 co-passenger satellites",
-      "payloadMass": "955",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 955,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "Cartosat-2E",
+            "country": "India",
+            "mass": 727,
+            "massUnit": "kg"
+          },
+          {
+            "name": "NIUSAT",
+            "country": "India",
+            "mass": 15,
+            "massUnit": "kg"
+          },
+          {
+            "name": "CESAT-1",
+            "country": "Japan",
+            "mass": 60,
+            "massUnit": "kg"
+          },
+          {
+            "name": "Lemur-2",
+            "country": "United States",
+            "mass": 32,
+            "massUnit": "kg",
+            "quantity": 8,
+            "massPerUnit": 4
+          },
+          {
+            "name": "Blue, Red, Green Diamonds",
+            "country": "United Kingdom/Australia/Israel",
+            "mass": 18,
+            "massUnit": "kg"
+          },
+          {
+            "name": "Max Valier Sat",
+            "country": "Italy/Germany",
+            "mass": 15,
+            "massUnit": "kg"
+          },
+          {
+            "name": "Venta-1",
+            "country": "Latvia",
+            "mass": 7.5,
+            "massUnit": "kg"
+          },
+          {
+            "name": "D-Sat",
+            "country": "Italy",
+            "mass": 4.5,
+            "massUnit": "kg"
+          },
+          {
+            "name": "QB50 Constellation",
+            "massUnit": "kg",
+            "satellites": [
+              {
+                "name": "Aalto-1",
+                "country": "Finland",
+                "mass": 4,
+                "massUnit": "kg"
+              },
+              {
+                "name": "COMPASS-2/Dragsail",
+                "country": "Germany",
+                "mass": 4,
+                "massUnit": "kg"
+              },
+              {
+                "name": "InflateSail",
+                "country": "United Kingdom",
+                "mass": 4,
+                "massUnit": "kg"
+              },
+              {
+                "name": "URSA MAIOR",
+                "country": "Italy",
+                "mass": 3,
+                "massUnit": "kg"
+              },
+              {
+                "name": "LituanicaSAT-2",
+                "country": "Lithuania",
+                "mass": 4,
+                "massUnit": "kg"
+              },
+              {
+                "name": "PEGASUS",
+                "country": "Austria",
+                "mass": 2,
+                "massUnit": "kg"
+              },
+              {
+                "name": "NUDTSat",
+                "country": "China",
+                "mass": 2,
+                "massUnit": "kg"
+              },
+              {
+                "name": "VZLUSAT1",
+                "country": "Czech Republic",
+                "mass": 2,
+                "massUnit": "kg"
+              },
+              {
+                "name": "UCLSat",
+                "country": "United Kingdom",
+                "mass": 2,
+                "massUnit": "kg"
+              }
+            ]
+          },
+          {
+            "name": "SUCHAI",
+            "country": "Chile",
+            "mass": 1,
+            "massUnit": "kg"
+          },
+          {
+            "name": "ROBUSTA-1B",
+            "country": "France",
+            "mass": 1,
+            "massUnit": "kg"
+          },
+          {
+            "name": "skCUBE",
+            "country": "Slovakia",
+            "mass": 1,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "",
-      "user": "ISRO",
+      "user": "",
       "launchOutcome": "Success",
       "missionDescription": "31 satellites launched in single mission",
-      "notes": "Simultaneous launch of 31 satellites including 29 foreign satellites, 1 student satellite and Cartosat-2E"
+      "notes": "Post mission PSLV fourth stage (PS4) was lowered to 350 km altitude and carried IDEA payload to measure electron density and electric field measurements"
     },
     {
       "launchNo": 63,
@@ -1001,9 +2231,18 @@
       "rocket": "PSLV",
       "configuration": "XL",
       "launchSite": "SLP - SDSC SHAR",
-      "payload": "India IRNSS-1H",
-      "payloadMass": "1425",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 1425,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "IRNSS-1H",
+            "country": "India",
+            "mass": 1425,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "",
       "user": "ISRO",
       "launchOutcome": "Failure",
@@ -1017,9 +2256,18 @@
       "rocket": "GSLV Mk II",
       "configuration": "Mk II",
       "launchSite": "SLP - SDSC SHAR",
-      "payload": "GSAT-6A",
-      "payloadMass": "2140",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 2140,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "GSAT-6A",
+            "country": "India",
+            "mass": 2140,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "GTO",
       "user": "INSAT",
       "launchOutcome": "Success",
@@ -1033,9 +2281,54 @@
       "rocket": "PSLV",
       "configuration": "XL",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "India Cartosat-2F and co-passenger satellites",
-      "payloadMass": "1323",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 1323,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "Cartosat-2F",
+            "country": "India",
+            "mass": 710,
+            "massUnit": "kg"
+          },
+          {
+            "name": "Microsat-TD",
+            "country": "India",
+            "mass": 120,
+            "massUnit": "kg"
+          },
+          {
+            "name": "INS-1C",
+            "country": "India",
+            "mass": 11,
+            "massUnit": "kg"
+          },
+          {
+            "name": "Foreign Microsatellites",
+            "satellites": [
+              {
+                "name": "Carbonite-2",
+                "country": "United Kingdom",
+                "mass": 100,
+                "massUnit": "kg"
+              },
+              {
+                "name": "ICEYE X1",
+                "country": "Finland",
+                "mass": 70,
+                "massUnit": "kg"
+              }
+            ]
+          },
+          {
+            "name": "Cubesats",
+            "quantity": 28,
+            "totalMass": 312,
+            "massUnit": "kg",
+            "note": "Including PicSat, SIGMA, CANYVAL-X, CNUSail 1, KAUSAT 5"
+          }
+        ]
+      },
       "orbit": "",
       "user": "ISRO",
       "launchOutcome": "Success",
@@ -1049,9 +2342,18 @@
       "rocket": "PSLV",
       "configuration": "XL",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "India IRNSS-1I",
-      "payloadMass": "1425",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 1425,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "IRNSS-1I",
+            "country": "India",
+            "mass": 1425,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "sub GTO",
       "user": "ISRO",
       "launchOutcome": "Success",
@@ -1065,9 +2367,24 @@
       "rocket": "PSLV",
       "configuration": "CA",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "United Kingdom NovaSAR-S, SSTL S1-4",
-      "payloadMass": "889",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 889,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "NovaSAR-S",
+            "country": "United Kingdom",
+            "mass": 445,
+            "massUnit": "kg"
+          },
+          {
+            "name": "SSTL S1-4",
+            "country": "United Kingdom",
+            "mass": 444,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "Low Earth",
       "user": "SSTL",
       "launchOutcome": "Success",
@@ -1081,9 +2398,18 @@
       "rocket": "GSLV Mk III",
       "configuration": "D2",
       "launchSite": "SLP - SDSC SHAR",
-      "payload": "GSAT-29",
-      "payloadMass": "3423",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 3423,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "GSAT-29",
+            "country": "India",
+            "mass": 3423,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "GTO",
       "user": "INSAT",
       "launchOutcome": "Success",
@@ -1097,14 +2423,103 @@
       "rocket": "PSLV",
       "configuration": "CA",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "India HySIS and 30 co-passenger satellites",
-      "payloadMass": "641.5",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 641.5,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "HySIS",
+            "country": "India",
+            "mass": 380,
+            "massUnit": "kg"
+          },
+          {
+            "name": "Foreign Satellites",
+            "satellites": [
+              {
+                "name": "Flock-3r",
+                "country": "United States",
+                "quantity": 16,
+                "mass": 80,
+                "massUnit": "kg",
+                "note": "Dove satellites"
+              },
+              {
+                "name": "Global-1",
+                "country": "United States",
+                "mass": 55,
+                "massUnit": "kg"
+              },
+              {
+                "name": "Lemur-2",
+                "country": "United States",
+                "quantity": 4,
+                "mass": 16,
+                "massUnit": "kg"
+              },
+              {
+                "name": "HSAT-1",
+                "country": "United States",
+                "mass": 13,
+                "massUnit": "kg"
+              },
+              {
+                "name": "CICERO-8",
+                "country": "United States",
+                "mass": 10,
+                "massUnit": "kg"
+              },
+              {
+                "name": "Hiber-1",
+                "country": "Netherlands",
+                "mass": 10,
+                "massUnit": "kg"
+              },
+              {
+                "name": "FACSAT-1",
+                "country": "Colombia",
+                "mass": 4,
+                "massUnit": "kg"
+              },
+              {
+                "name": "Innosat-2",
+                "country": "Malaysia",
+                "mass": 4,
+                "massUnit": "kg"
+              },
+              {
+                "name": "Centauri-1",
+                "country": "Australia",
+                "mass": 4,
+                "massUnit": "kg"
+              },
+              {
+                "name": "CASE",
+                "country": "Canada",
+                "mass": 4,
+                "massUnit": "kg"
+              },
+              {
+                "name": "Reaktor Hello World",
+                "country": "Finland",
+                "mass": 2,
+                "massUnit": "kg"
+              },
+              {
+                "name": "³Cat-1",
+                "country": "Catalonia",
+                "mass": 1.2,
+                "massUnit": "kg"
+              }
+            ]
+          }
+        ]
+      },
       "orbit": "Low Earth",
-      "user": "ISRO",
+      "user": "",
       "launchOutcome": "Success",
       "missionDescription": "Launch of HySIS and commercial satellites",
-      "notes": "Launch of HySIS and 30 commercial satellites"
+      "notes": "Launch of 9 Commercial Satellites and HySIS"
     },
     {
       "launchNo": 70,
@@ -1113,16 +2528,24 @@
       "rocket": "GSLV Mk II",
       "configuration": "Mk II",
       "launchSite": "SLP - SDSC SHAR",
-      "payload": "GSAT-7A",
-      "payloadMass": "2250",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 2250,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "GSAT-7A",
+            "country": "India",
+            "mass": 2250,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "GTO",
       "user": "INSAT",
       "launchOutcome": "Success",
       "missionDescription": "Communication satellite launch",
       "notes": "Used an enhanced version of the Vikas engine called High Thrust Vikas Engine (HTVE) along with uprated cryogenic engine C15"
     },
-
     {
       "launchNo": 71,
       "flightNo": "C44",
@@ -1130,14 +2553,30 @@
       "rocket": "PSLV",
       "configuration": "DL",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "India Microsat-R, Kalamsat V2",
-      "payloadMass": "741.2",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 741.2,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "Microsat-R",
+            "country": "India",
+            "mass": 740,
+            "massUnit": "kg"
+          },
+          {
+            "name": "Kalamsat V2",
+            "country": "India",
+            "mass": 1.2,
+            "massUnit": "kg",
+            "note": "attached to PS4"
+          }
+        ]
+      },
       "orbit": "Low Earth",
       "user": "DRDO, Space Kidz",
       "launchOutcome": "Success",
       "missionDescription": "First flight of PSLV-DL variant",
-      "notes": "Launch of Microsat-R and Kalamsat"
+      "notes": "First flight of PSLV-DL variant. Propellant tank on fourth stage (PS4) made out of Aluminum alloy instead of Ti-6Al-4V"
     },
     {
       "launchNo": 72,
@@ -1146,14 +2585,87 @@
       "rocket": "PSLV",
       "configuration": "QL",
       "launchSite": "SLP - SDSC SHAR",
-      "payload": "India EMISAT and 28 co-passenger satellites",
-      "payloadMass": "656",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 656,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "EMISAT",
+            "country": "India",
+            "mass": 436,
+            "massUnit": "kg"
+          },
+          {
+            "name": "Foreign Satellites",
+            "satellites": [
+              {
+                "name": "Flock 4a",
+                "country": "United States",
+                "quantity": 20,
+                "massPerUnit": 5.7,
+                "mass": 114,
+                "massUnit": "kg"
+              },
+              {
+                "name": "Lemur-2",
+                "country": "United States",
+                "quantity": 4,
+                "massPerUnit": 5.2,
+                "mass": 20.8,
+                "massUnit": "kg"
+              },
+              {
+                "name": "M6P",
+                "country": "Lithuania",
+                "mass": 6.8,
+                "massUnit": "kg"
+              },
+              {
+                "name": "BlueWalker1",
+                "country": "Lithuania",
+                "mass": 10,
+                "massUnit": "kg"
+              },
+              {
+                "name": "Aistechsat-3",
+                "country": "Spain",
+                "mass": 2.3,
+                "massUnit": "kg"
+              },
+              {
+                "name": "Astrocast-2",
+                "country": "Switzerland",
+                "mass": 3.8,
+                "massUnit": "kg"
+              }
+            ]
+          },
+          {
+            "name": "PS4 Attached Payloads",
+            "satellites": [
+              {
+                "name": "ExseedSat-2",
+                "country": "India"
+              },
+              {
+                "name": "ARIS 101F",
+                "country": "India",
+                "mass": 10,
+                "massUnit": "kg"
+              },
+              {
+                "name": "ISRO AIS payload",
+                "country": "India"
+              }
+            ]
+          }
+        ]
+      },
       "orbit": "Low Earth",
       "user": "DRDO",
       "launchOutcome": "Success",
       "missionDescription": "Launch of EMISAT and commercial satellites",
-      "notes": "Launch of EMISAT and 28 foreign satellites"
+      "notes": "Flight C45. EMISAT (436 kg) and rideshares (220 kg)"
     },
     {
       "launchNo": 73,
@@ -1162,9 +2674,18 @@
       "rocket": "PSLV",
       "configuration": "CA",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "India RISAT-2B",
-      "payloadMass": "615",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 615,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "RISAT-2B",
+            "country": "India",
+            "mass": 615,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "Low Earth",
       "user": "ISRO",
       "launchOutcome": "Success",
@@ -1178,9 +2699,18 @@
       "rocket": "GSLV Mk III",
       "configuration": "M1",
       "launchSite": "SLP - SDSC SHAR",
-      "payload": "Chandrayaan-2",
-      "payloadMass": "3850",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 3850,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "Chandrayaan-2",
+            "country": "India",
+            "mass": 3850,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "EPO",
       "user": "ISRO",
       "launchOutcome": "Success",
@@ -1194,14 +2724,40 @@
       "rocket": "PSLV",
       "configuration": "XL",
       "launchSite": "SLP - SDSC SHAR",
-      "payload": "India Cartosat-3, United States SuperDoves",
-      "payloadMass": "1625",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 1625,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "Cartosat-3",
+            "country": "India",
+            "mass": 1625,
+            "massUnit": "kg"
+          },
+          {
+            "name": "Foreign Satellites",
+            "satellites": [
+              {
+                "name": "Meshbed",
+                "country": "United States",
+                "mass": 4.5,
+                "massUnit": "kg"
+              },
+              {
+                "name": "Flock 4p",
+                "country": "United States",
+                "quantity": 12,
+                "note": "SuperDoves"
+              }
+            ]
+          }
+        ]
+      },
       "orbit": "Low Earth",
-      "user": "ISRO",
+      "user": "",
       "launchOutcome": "Success",
-      "missionDescription": "Launch of Cartosat-3",
-      "notes": "First use of Vikram 1601 processor in navigation computer"
+      "missionDescription": "",
+      "notes": "Semi-Conductor Laboratory fabricated Vikram 1601 processor used for first time in navigation computer of launch vehicle"
     },
     {
       "launchNo": 76,
@@ -1210,14 +2766,63 @@
       "rocket": "PSLV",
       "configuration": "QL",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "India RISAT-2BR1 and 9 co-passenger satellites",
-      "payloadMass": "628",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 628,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "RISAT-2BR1",
+            "country": "India",
+            "mass": 628,
+            "massUnit": "kg"
+          },
+          {
+            "name": "Foreign Satellites",
+            "satellites": [
+              {
+                "name": "QPS SAR-1 Izanagi",
+                "country": "Japan",
+                "mass": 100,
+                "massUnit": "kg"
+              },
+              {
+                "name": "Lemur-2",
+                "country": "United States",
+                "quantity": 4
+              },
+              {
+                "name": "Duchifat-3",
+                "country": "Israel",
+                "mass": 2.3,
+                "massUnit": "kg"
+              },
+              {
+                "name": "1HOPSAT",
+                "country": "United States",
+                "mass": 22,
+                "massUnit": "kg"
+              },
+              {
+                "name": "Tyvak-0129",
+                "country": "United States",
+                "mass": 11,
+                "massUnit": "kg"
+              },
+              {
+                "name": "Tyvak-0092 (COMMTRAIL/NANOVA)",
+                "country": "Italy",
+                "mass": 5,
+                "massUnit": "kg"
+              }
+            ]
+          }
+        ]
+      },
       "orbit": "Low Earth",
-      "user": "ISRO",
+      "user": "",
       "launchOutcome": "Success",
       "missionDescription": "50th Flight of PSLV",
-      "notes": "Launch of 9 Commercial Satellites and RISAT-2BR1"
+      "notes": "Flight C48 - 50th Flight of PSLV"
     },
     {
       "launchNo": 77,
@@ -1226,14 +2831,48 @@
       "rocket": "PSLV",
       "configuration": "DL",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "India EOS-01, 9 co-passenger satellites",
-      "payloadMass": "630",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 630,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "EOS-01",
+            "country": "India",
+            "mass": 630,
+            "massUnit": "kg",
+            "note": "formerly RISAT-2BR2"
+          },
+          {
+            "name": "Foreign Satellites",
+            "satellites": [
+              {
+                "name": "Lemur-2",
+                "country": "United States",
+                "quantity": 4
+              },
+              {
+                "name": "R2",
+                "country": "Lithuania"
+              },
+              {
+                "name": "KSM Constellation",
+                "country": "Luxembourg",
+                "satellites": [
+                  { "name": "KSM-1A" },
+                  { "name": "KSM-1B" },
+                  { "name": "KSM-1C" },
+                  { "name": "KSM-1D" }
+                ]
+              }
+            ]
+          }
+        ]
+      },
       "orbit": "Low Earth",
-      "user": "ISRO",
+      "user": "",
       "launchOutcome": "Success",
-      "missionDescription": "Launch of EOS-01 and commercial satellites",
-      "notes": "Launch of 9 Commercial Satellites and EOS-01"
+      "missionDescription": "Second flight of PSLV-DL variant",
+      "notes": "Second flight of PSLV-DL variant"
     },
     {
       "launchNo": 78,
@@ -1242,9 +2881,19 @@
       "rocket": "PSLV",
       "configuration": "XL",
       "launchSite": "SLP - SDSC SHAR",
-      "payload": "India GSAT-12R (CMS-1)",
-      "payloadMass": "1425",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 1425,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "CMS-1",
+            "country": "India",
+            "mass": 1425,
+            "massUnit": "kg",
+            "note": "formerly GSAT-12R"
+          }
+        ]
+      },
       "orbit": "sub GTO",
       "user": "ISRO",
       "launchOutcome": "Success",
@@ -1258,11 +2907,55 @@
       "rocket": "PSLV",
       "configuration": "DL",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "Brazil Amazônia-1, 18 co-passenger satellites",
-      "payloadMass": "637",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 637,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "Amazônia-1",
+            "country": "Brazil",
+            "mass": 637,
+            "massUnit": "kg"
+          },
+          {
+            "name": "Indian Satellites",
+            "satellites": [
+              {
+                "name": "Satish Dhawan Sat",
+                "mass": 1.9,
+                "massUnit": "kg"
+              },
+              {
+                "name": "SindhuNetra",
+                "mass": 10,
+                "massUnit": "kg"
+              },
+              {
+                "name": "UNITYSats",
+                "quantity": 3
+              }
+            ]
+          },
+          {
+            "name": "Foreign Satellites",
+            "satellites": [
+              {
+                "name": "SpaceBEE",
+                "country": "United States",
+                "quantity": 12,
+                "massPerUnit": 4,
+                "massUnit": "kg"
+              },
+              {
+                "name": "MexicoSAI-1 Nanoconnect-2",
+                "country": "United States"
+              }
+            ]
+          }
+        ]
+      },
       "orbit": "Low Earth",
-      "user": "ISRO",
+      "user": "",
       "launchOutcome": "Success",
       "missionDescription": "Launch of Amazonia-1 and commercial satellites",
       "notes": "Launch of Amazonia-1 and 13 commercial satellites"
@@ -1274,16 +2967,25 @@
       "rocket": "GSLV Mk II",
       "configuration": "Mk II",
       "launchSite": "SLP - SDSC SHAR",
-      "payload": "GISAT-1 / EOS-03",
-      "payloadMass": "2268",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 2268,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "EOS-03",
+            "country": "India",
+            "mass": 2268,
+            "massUnit": "kg",
+            "note": "formerly GISAT-1"
+          }
+        ]
+      },
       "orbit": "GTO",
       "user": "ISRO",
       "launchOutcome": "Failure",
       "missionDescription": "Launch of EOS-03 geostationary imaging satellite",
       "notes": "Cryogenic upper stage failure resulted in mission failure"
     },
-
     {
       "launchNo": 81,
       "flightNo": "C52",
@@ -1291,9 +2993,30 @@
       "rocket": "PSLV",
       "configuration": "XL",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "India EOS-4/RISAT-1A, INSPIRESat-1, INS-2TD",
-      "payloadMass": "1736.2",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 1736.2,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "EOS-4/RISAT-1A",
+            "country": "India",
+            "mass": 1710,
+            "massUnit": "kg"
+          },
+          {
+            "name": "INSPIRESat-1",
+            "country": "India/United States/Taiwan",
+            "mass": 8.7,
+            "massUnit": "kg"
+          },
+          {
+            "name": "INS-2TD",
+            "country": "India/Bhutan",
+            "mass": 17.5,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "Low Earth",
       "user": "ISRO",
       "launchOutcome": "Success",
@@ -1307,9 +3030,35 @@
       "rocket": "PSLV",
       "configuration": "CA",
       "launchSite": "SLP - SDSC SHAR",
-      "payload": "Singapore DS-EO, NeuSAR, SCOOB-I, India POEM-1 payloads",
-      "payloadMass": "522.8",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 522.8,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "DS-EO",
+            "country": "Singapore",
+            "mass": 365,
+            "massUnit": "kg"
+          },
+          {
+            "name": "NeuSAR",
+            "country": "Singapore",
+            "mass": 155,
+            "massUnit": "kg"
+          },
+          {
+            "name": "SCOOB-I",
+            "country": "Singapore",
+            "mass": 2.8,
+            "massUnit": "kg"
+          },
+          {
+            "name": "POEM-1",
+            "country": "India",
+            "note": "6 payloads attached to fourth stage"
+          }
+        ]
+      },
       "orbit": "Low Earth",
       "user": "DSTA",
       "launchOutcome": "Success",
@@ -1323,9 +3072,18 @@
       "rocket": "SSLV",
       "configuration": "",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "EOS 02, AzaadiSAT",
-      "payloadMass": "",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "satellites": [
+          {
+            "name": "EOS-02",
+            "country": "India"
+          },
+          {
+            "name": "AzaadiSAT",
+            "country": "India"
+          }
+        ]
+      },
       "orbit": "",
       "user": "ISRO",
       "launchOutcome": "Failure",
@@ -1336,12 +3094,26 @@
       "launchNo": 84,
       "flightNo": "M2",
       "dateTime": "2022-10-22 | 18:37",
-      "rocket": "LVM3",
+      "rocket": "GSLV Mk III",
       "configuration": "M2",
       "launchSite": "SLP - SDSC SHAR",
-      "payload": "36 x OneWeb Gen-1",
-      "payloadMass": "5796",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 5796,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "OneWeb Gen-1",
+            "country": "United Kingdom",
+            "constellation": {
+              "version": "1.0",
+              "quantity": 36,
+              "massPerUnit": 161,
+              "massUnit": "kg",
+              "totalConstellationMass": 5796
+            }
+          }
+        ]
+      },
       "orbit": "LEO",
       "user": "OneWeb",
       "launchOutcome": "Success",
@@ -1355,10 +3127,55 @@
       "rocket": "PSLV",
       "configuration": "XL",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "India Oceansat-3/EOS-6, 8 nanosatellites",
-      "payloadMass": "1117",
-      "payloadMassUnit": "kg",
-      "orbit": "Low Earth",
+      "payload": {
+        "totalMass": 1117,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "EOS-6",
+            "country": "India",
+            "mass": 1117,
+            "massUnit": "kg",
+            "note": "formerly Oceansat-3"
+          },
+          {
+            "name": "Foreign Satellites",
+            "satellites": [
+              {
+                "name": "Astrocast-2",
+                "country": "United States/Switzerland",
+                "quantity": 4,
+                "massPerUnit": 4.48,
+                "mass": 17.92,
+                "massUnit": "kg"
+              },
+              {
+                "name": "BhutanSat",
+                "country": "India/Bhutan",
+                "mass": 18.28,
+                "massUnit": "kg",
+                "note": "aka INS-2B"
+              },
+              {
+                "name": "Anand",
+                "country": "India",
+                "mass": 16.51,
+                "massUnit": "kg",
+                "note": "Pixxel TD-1"
+              },
+              {
+                "name": "Thybolt",
+                "country": "India",
+                "quantity": 2,
+                "massPerUnit": 1.45,
+                "mass": 2.9,
+                "massUnit": "kg"
+              }
+            ]
+          }
+        ]
+      },
+      "orbit": "LEO",
       "user": "ISRO",
       "launchOutcome": "Success",
       "missionDescription": "Launch of EOS-06 and commercial satellites",
@@ -1371,10 +3188,31 @@
       "rocket": "SSLV",
       "configuration": "",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "EOS-07 and two other satellites",
-      "payloadMass": "",
-      "payloadMassUnit": "kg",
-      "orbit": "",
+      "payload": {
+        "totalMass": 172.6,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "EOS-07",
+            "country": "India",
+            "mass": 156.3,
+            "massUnit": "kg"
+          },
+          {
+            "name": "Janus-1",
+            "country": "United States",
+            "mass": 11.5,
+            "massUnit": "kg"
+          },
+          {
+            "name": "AzaadiSAT-2",
+            "country": "India",
+            "mass": 8.7,
+            "massUnit": "kg"
+          }
+        ]
+      },
+      "orbit": "LEO",
       "user": "ISRO",
       "launchOutcome": "Success",
       "missionDescription": "Second flight of SSLV",
@@ -1384,12 +3222,26 @@
       "launchNo": 87,
       "flightNo": "M3",
       "dateTime": "2023-03-26 | 03:30",
-      "rocket": "LVM3",
+      "rocket": "GSLV Mk III",
       "configuration": "M3",
       "launchSite": "SLP - SDSC SHAR",
-      "payload": "36 x OneWeb Gen-1",
-      "payloadMass": "5805",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 5805,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "OneWeb Gen-1",
+            "country": "United Kingdom",
+            "constellation": {
+              "version": "1.0",
+              "quantity": 36,
+              "massPerUnit": 161.25,
+              "massUnit": "kg",
+              "totalConstellationMass": 5805
+            }
+          }
+        ]
+      },
       "orbit": "LEO",
       "user": "OneWeb",
       "launchOutcome": "Success",
@@ -1403,14 +3255,34 @@
       "rocket": "PSLV",
       "configuration": "CA",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "Singapore TeLEOS-2, Lumelite-4, POEM-2 payloads",
-      "payloadMass": "757",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 757,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "TeLEOS-2",
+            "country": "Singapore",
+            "mass": 741,
+            "massUnit": "kg"
+          },
+          {
+            "name": "Lumelite-4",
+            "country": "Singapore",
+            "mass": 16,
+            "massUnit": "kg"
+          },
+          {
+            "name": "POEM-2",
+            "country": "India",
+            "note": "7 payloads attached to fourth stage"
+          }
+        ]
+      },
       "orbit": "Low Earth",
       "user": "DSTA",
       "launchOutcome": "Success",
       "missionDescription": "Commercial launch for Singapore",
-      "notes": "Commercial launch for Singapore's TeLEOS-2 satellite"
+      "notes": "First launch operation of a rocket partially assembled at PSLV Integration Facility (PIF). First flight of PSLV-CA without Aerodynamic Stabiliser (AST) modules"
     },
     {
       "launchNo": 89,
@@ -1419,9 +3291,18 @@
       "rocket": "GSLV Mk II",
       "configuration": "Mk II",
       "launchSite": "SLP - SDSC SHAR",
-      "payload": "NVS-01",
-      "payloadMass": "2232",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 2232,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "NVS-01",
+            "country": "India",
+            "mass": 2232,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "GTO",
       "user": "ISRO",
       "launchOutcome": "Success",
@@ -1435,26 +3316,84 @@
       "rocket": "PSLV",
       "configuration": "CA",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "Singapore DS-SAR and 6 co-passenger satellites",
-      "payloadMass": "360",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 423.5,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "DS-SAR",
+            "country": "Singapore",
+            "mass": 353,
+            "massUnit": "kg"
+          },
+          {
+            "name": "Secondary Payloads",
+            "satellites": [
+              {
+                "name": "Arcade",
+                "country": "Singapore",
+                "mass": 24,
+                "massUnit": "kg"
+              },
+              {
+                "name": "Velox-AM",
+                "country": "Singapore",
+                "mass": 23,
+                "massUnit": "kg"
+              },
+              {
+                "name": "ORB-12 STRIDER",
+                "country": "Singapore/United Kingdom",
+                "mass": 13,
+                "massUnit": "kg"
+              },
+              {
+                "name": "Galassia-2",
+                "country": "Singapore",
+                "mass": 3.5,
+                "massUnit": "kg"
+              },
+              {
+                "name": "SCOOB-II",
+                "country": "Singapore",
+                "mass": 4,
+                "massUnit": "kg"
+              },
+              {
+                "name": "NuLIon",
+                "country": "Singapore",
+                "mass": 3,
+                "massUnit": "kg"
+              }
+            ]
+          }
+        ]
+      },
       "orbit": "Low Earth",
       "user": "DSTA",
       "launchOutcome": "Success",
       "missionDescription": "Commercial launch for Singapore",
       "notes": "Commercial launch for Singapore's DS-SAR satellite"
     },
-
     {
       "launchNo": 91,
       "flightNo": "M4",
       "dateTime": "2023-07-14 | 09:05",
-      "rocket": "LVM3",
+      "rocket": "GSLV Mk III",
       "configuration": "M4",
       "launchSite": "SLP - SDSC SHAR",
-      "payload": "Chandrayaan-3",
-      "payloadMass": "3895",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 3895,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "Chandrayaan-3",
+            "country": "India",
+            "mass": 3895,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "EPO",
       "user": "ISRO",
       "launchOutcome": "Success",
@@ -1468,10 +3407,19 @@
       "rocket": "PSLV",
       "configuration": "XL",
       "launchSite": "SLP - SDSC SHAR",
-      "payload": "India Aditya-L1",
-      "payloadMass": "1480.7",
-      "payloadMassUnit": "kg",
-      "orbit": "Halo orbit",
+      "payload": {
+        "totalMass": 1480.7,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "Aditya-L1",
+            "country": "India",
+            "mass": 1480.7,
+            "massUnit": "kg"
+          }
+        ]
+      },
+      "orbit": "Elliptical Orbit",
       "user": "ISRO",
       "launchOutcome": "Success",
       "missionDescription": "Launch of solar mission",
@@ -1484,9 +3432,14 @@
       "rocket": "Test Vehicle",
       "configuration": "Test Vehicle Abort Mission-1",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "Crew Module",
-      "payloadMass": "",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "satellites": [
+          {
+            "name": "Crew Module",
+            "country": "India"
+          }
+        ]
+      },
       "orbit": "Sub-orbital",
       "user": "ISRO",
       "launchOutcome": "Success",
@@ -1500,10 +3453,24 @@
       "rocket": "PSLV",
       "configuration": "DL",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "India XPoSat, POEM-3 payloads",
-      "payloadMass": "757",
-      "payloadMassUnit": "kg",
-      "orbit": "Low Earth",
+      "payload": {
+        "totalMass": 757,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "XPoSat",
+            "country": "India",
+            "mass": 757,
+            "massUnit": "kg"
+          },
+          {
+            "name": "POEM-3",
+            "country": "India",
+            "note": "10 payloads attached to fourth stage"
+          }
+        ]
+      },
+      "orbit": "LEO",
       "user": "ISRO",
       "launchOutcome": "Success",
       "missionDescription": "Launch of XPoSat scientific mission",
@@ -1516,9 +3483,18 @@
       "rocket": "GSLV Mk II",
       "configuration": "Mk II",
       "launchSite": "SLP - SDSC SHAR",
-      "payload": "INSAT-3DS",
-      "payloadMass": "2275",
-      "payloadMassUnit": "kg",
+      "payload": {
+        "totalMass": 2275,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "INSAT-3DS",
+            "country": "India",
+            "mass": 2275,
+            "massUnit": "kg"
+          }
+        ]
+      },
       "orbit": "GTO",
       "user": "ISRO",
       "launchOutcome": "Success",
@@ -1530,16 +3506,31 @@
       "flightNo": "D3",
       "dateTime": "2024-08-16 | 00:00",
       "rocket": "SSLV",
-      "configuration": "",
+      "configuration": "SSLV",
       "launchSite": "FLP - SDSC SHAR",
-      "payload": "EOS-8 and SR-O Demosat",
-      "payloadMass": "",
-      "payloadMassUnit": "kg",
-      "orbit": "",
+      "payload": {
+        "totalMass": 176.8,
+        "massUnit": "kg",
+        "satellites": [
+          {
+            "name": "EOS-8",
+            "country": "India",
+            "Mass": 175.5,
+            "massUnit": "kg"
+          },
+          {
+            "name": "SR-O Demosat",
+            "country": "India",
+            "Mass": 1.3,
+            "massUnit": "kg"
+          }
+        ]
+      },
+      "orbit": "LEO",
       "user": "ISRO",
       "launchOutcome": "Success",
-      "missionDescription": "Third flight of SSLV",
-      "notes": "Launch of EOS-8 and SR-O Demosat"
+      "missionDescription": "The SSLV-D3 placed EOS-08 and SR-O Demosat precisely into the orbit.",
+      "notes": " This flight completes the SSLV Development Project and enables operational missions by Indian industry and NSIL."
     }
   ]
 }
