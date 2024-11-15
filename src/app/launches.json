@@ -624,8 +624,8 @@
           }
         ]
       },
-      "orbit": "",
-      "user": "",
+      "orbit": "SSO",
+      "user": "ISRO",
       "launchOutcome": "Success",
       "missionDescription": "First flight of hardware upgrade, first launch of reentry capsule (SRE)",
       "notes": "For the first time, a Dual Launch Adopter (DLA) was used in the PSLV to accommodate two primary satellites at the same time"
@@ -656,11 +656,11 @@
           }
         ]
       },
-      "orbit": "",
-      "user": "",
+      "orbit": "LEO",
+      "user": "ISRO",
       "launchOutcome": "Success",
-      "missionDescription": "ISRO's first commercial launch",
-      "notes": "First flight of the 'Core-Alone' configuration"
+      "missionDescription": "First flight of the 'Core-Alone' configuration and first deticated commercial launch (foreign satellite as the main payload).",
+      "notes": "PSLV-C8 is the eleventh flight of ISRO's Polar Satellite Launch Vehicle (PSLV) and its first commercial launch as well. In this flight, PSLV launched the 352 kg Italian astronomical satellite, AGILE, into a 550 km circular orbit, inclined at an angle of 2.5 deg to the equator. An Advanced Avionics Module (AAM), weighing 185 kg, to test advanced launch vehicle avionics systems like mission computers, navigation and telemetry systems, is also flown on PSLV-C8."
     },
     {
       "launchNo": 24,
@@ -706,8 +706,8 @@
           }
         ]
       },
-      "orbit": "",
-      "user": "",
+      "orbit": "LEO",
+      "user": "Israel Aerospace Industries (IAI)",
       "launchOutcome": "Success",
       "missionDescription": "ISRO's second commercial launch",
       "notes": "An Israeli reconnaissance satellite, and ISRO's first fully commercial launch"
@@ -785,8 +785,8 @@
           }
         ]
       },
-      "orbit": "",
-      "user": "",
+      "orbit": "SSO",
+      "user": "ISRO",
       "launchOutcome": "Success",
       "missionDescription": "Rocket put 10 satellites into orbit in a precisely timed sequence",
       "notes": "Highest number of satellites by any Indian launch vehicle at that time"
@@ -810,8 +810,8 @@
           }
         ]
       },
-      "orbit": "",
-      "user": "",
+      "orbit": "ETO",
+      "user": "ISRO",
       "launchOutcome": "Success",
       "missionDescription": "First flight of the PSLV-XL configuration, first Indian Lunar probe",
       "notes": "India's first mission to the Moon launched"
@@ -841,8 +841,8 @@
           }
         ]
       },
-      "orbit": "",
-      "user": "",
+      "orbit": "SSO",
+      "user": "ISRO",
       "launchOutcome": "Success",
       "missionDescription": "India's first radar imaging satellite, RISAT",
       "notes": "India's first all weather observation spy satellite RISAT-2 launched"
@@ -904,8 +904,8 @@
           }
         ]
       },
-      "orbit": "",
-      "user": "",
+      "orbit": "SSO",
+      "user": "ISRO",
       "launchOutcome": "Success",
       "missionDescription": "First Swiss and Turkish satellites",
       "notes": "SwissCube-1 and ITUpSAT1, Switzerland's and Turkey's first home-grown satellites launched into space"
@@ -978,8 +978,8 @@
           }
         ]
       },
-      "orbit": "",
-      "user": "",
+      "orbit": "SSO",
+      "user": "ISRO",
       "launchOutcome": "Success",
       "missionDescription": "Multi-satellite launch including second Swiss satellite",
       "notes": "Main satellite Cartosat-2B and Algeria's ALSAT-2A along with AISSat-1, TIsat-1, and StudSat. TIsat-1 is the second ever Swiss satellite launched into Space"
@@ -1040,8 +1040,8 @@
           }
         ]
       },
-      "orbit": "",
-      "user": "",
+      "orbit": "SSO",
+      "user": "ISRO",
       "launchOutcome": "Success",
       "missionDescription": "Launch of ResourceSat-2",
       "notes": "The standard version, with six solid strap-on booster motors strung around the first stage, was used"
@@ -1065,7 +1065,7 @@
           }
         ]
       },
-      "orbit": "",
+      "orbit": "Sub GTO",
       "user": "",
       "launchOutcome": "Success",
       "missionDescription": "First use of Vikram flight computer",
@@ -1108,8 +1108,8 @@
           }
         ]
       },
-      "orbit": "",
-      "user": "",
+      "orbit": "LEO",
+      "user": "ISRO, CNES",
       "launchOutcome": "Success",
       "missionDescription": "Launch of climate research satellite",
       "notes": "The Megha-Tropiques satellite for climate research launched along with three microsatellites"
@@ -1133,8 +1133,8 @@
           }
         ]
       },
-      "orbit": "",
-      "user": "",
+      "orbit": "SSO",
+      "user": "ISRO",
       "launchOutcome": "Success",
       "missionDescription": "Launch of Radar Imaging Satellite-1",
       "notes": "RISAT-1 launched"
@@ -1171,8 +1171,8 @@
           }
         ]
       },
-      "orbit": "",
-      "user": "",
+      "orbit": "SSO",
+      "user": "Airbus Defence and Space, ISRO, JAPAN",
       "launchOutcome": "Success",
       "missionDescription": "ISRO's 100th mission",
       "notes": "ISRO's 100th mission"
@@ -1232,8 +1232,8 @@
           }
         ]
       },
-      "orbit": "",
-      "user": "",
+      "orbit": "SSO",
+      "user": "India/France",
       "launchOutcome": "Success",
       "missionDescription": "Indo-French SARAL and six other foreign satellites launched",
       "notes": "First Austrian satellites launched"
@@ -1257,7 +1257,7 @@
           }
         ]
       },
-      "orbit": "",
+      "orbit": "Sub GTO",
       "user": "",
       "launchOutcome": "Success",
       "missionDescription": "Launch of IRNSS-1A, the first satellite of the Indian Regional Navigation Satellite System",
@@ -1307,7 +1307,7 @@
           }
         ]
       },
-      "orbit": "",
+      "orbit": "ETO",
       "user": "ISRO",
       "launchOutcome": "Success",
       "missionDescription": "Mars Orbiter Mission or Mangalyaan, India's first mission to Mars",
@@ -1332,7 +1332,7 @@
           }
         ]
       },
-      "orbit": "",
+      "orbit": "Sub GTO",
       "user": "ISRO",
       "launchOutcome": "Success",
       "missionDescription": "Second navigation satellite launch",
